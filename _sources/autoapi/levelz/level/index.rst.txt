@@ -1,0 +1,49 @@
+:py:mod:`levelz.level`
+======================
+
+.. py:module:: levelz.level
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   levelz.level.Dimension
+
+
+
+
+.. py:class:: Dimension
+
+
+   Bases: :py:obj:`enum.Enum`
+
+   Represents a Game Dimension.
+
+   .. py:attribute:: TWO
+      :value: 2
+
+      Represents a 2D Plane.
+
+
+   .. py:attribute:: THREE
+      :value: 3
+
+      Represents a 3D Space.
+
+
+   .. py:method:: is2D()
+
+      Returns True if the Dimension is 2D.
+
+
+   .. py:method:: is3D()
+
+      Returns True if the Dimension is 3D.
+
+
+

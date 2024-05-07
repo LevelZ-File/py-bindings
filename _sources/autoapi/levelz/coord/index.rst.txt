@@ -1,0 +1,49 @@
+:py:mod:`levelz.coord`
+======================
+
+.. py:module:: levelz.coord
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   coord/index.rst
+
+
+Package Contents
+----------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   levelz.coord.Coordinate
+
+
+
+
+.. py:class:: Coordinate
+
+
+   Bases: :py:obj:`abc.ABC`
+
+   Helper class that provides a standard way to create an ABC using
+   inheritance.
+
+   .. py:property:: magnitude
+      :abstractmethod:
+
+      Return the magnitude of the coordinate.
+
+
+   .. py:property:: dimension
+      :abstractmethod:
+
+      Return the dimension of the coordinate.
+
+
+

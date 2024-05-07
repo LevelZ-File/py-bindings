@@ -1,0 +1,94 @@
+:py:mod:`levelz`
+================
+
+.. py:module:: levelz
+
+.. autoapi-nested-parse::
+
+   Python bindings & API for the LevelZ File Format
+
+
+
+Subpackages
+-----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 3
+
+   coord/index.rst
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   level/index.rst
+
+
+Package Contents
+----------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   levelz.Dimension
+   levelz.Coordinate
+
+
+
+
+.. py:class:: Dimension
+
+
+   Bases: :py:obj:`enum.Enum`
+
+   Represents a Game Dimension.
+
+   .. py:attribute:: TWO
+      :value: 2
+
+      Represents a 2D Plane.
+
+
+   .. py:attribute:: THREE
+      :value: 3
+
+      Represents a 3D Space.
+
+
+   .. py:method:: is2D()
+
+      Returns True if the Dimension is 2D.
+
+
+   .. py:method:: is3D()
+
+      Returns True if the Dimension is 3D.
+
+
+
+.. py:class:: Coordinate
+
+
+   Bases: :py:obj:`abc.ABC`
+
+   Helper class that provides a standard way to create an ABC using
+   inheritance.
+
+   .. py:property:: magnitude
+      :abstractmethod:
+
+      Return the magnitude of the coordinate.
+
+
+   .. py:property:: dimension
+      :abstractmethod:
+
+      Return the dimension of the coordinate.
+
+
+
