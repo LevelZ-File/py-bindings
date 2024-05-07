@@ -7,6 +7,7 @@ if [ ! -d "out" ]; then
 fi;
 
 cp -Rfv docs/build/* ./out/
+cp -Rfv docs/_config.yml ./out/
 
 git switch -f gh-pages
 
