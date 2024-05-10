@@ -4,17 +4,8 @@
 .. py:module:: levelz.coord
 
 
-Submodules
-----------
-.. toctree::
-   :titlesonly:
-   :maxdepth: 1
-
-   coord/index.rst
-
-
-Package Contents
-----------------
+Module Contents
+---------------
 
 Classes
 ~~~~~~~
@@ -22,6 +13,8 @@ Classes
 .. autoapisummary::
 
    levelz.coord.Coordinate
+   levelz.coord.Coordinate2D
+   levelz.coord.Coordinate3D
 
 
 
@@ -31,8 +24,7 @@ Classes
 
    Bases: :py:obj:`abc.ABC`
 
-   Helper class that provides a standard way to create an ABC using
-   inheritance.
+   Represents a Game Coordinate.
 
    .. py:property:: magnitude
       :abstractmethod:
@@ -44,6 +36,117 @@ Classes
       :abstractmethod:
 
       Return the dimension of the coordinate.
+
+
+
+.. py:class:: Coordinate2D(x: float, y: float)
+
+
+   Bases: :py:obj:`Coordinate`
+
+   Represents a 2-Dimensional Coordinate.
+
+   .. py:property:: magnitude
+
+      Return the magnitude of the coordinate.
+
+
+   .. py:property:: dimension
+
+      Return the dimension of the coordinate.
+
+
+   .. py:attribute:: x
+      :type: float
+      :value: 0
+
+      The x-coordinate of the 2D Coordinate.
+
+
+   .. py:attribute:: y
+      :type: float
+      :value: 0
+
+      The y-coordinate of the 2D Coordinate.
+
+
+   .. py:method:: __str__()
+
+      Return str(self).
+
+
+   .. py:method:: __eq__(other)
+
+      Return self==value.
+
+
+   .. py:method:: from_string(s: str)
+      :staticmethod:
+
+      Parses a string to create a 2D Coordinate.
+
+      :param str s: The string to parse.
+      :return: The 2D Coordinate.
+      :rtype: Coordinate2D
+
+
+
+.. py:class:: Coordinate3D(x: float, y: float, z: float)
+
+
+   Bases: :py:obj:`Coordinate`
+
+   Represents a 3-Dimensional Coordinate.
+
+   .. py:property:: magnitude
+
+      Return the magnitude of the coordinate.
+
+
+   .. py:property:: dimension
+
+      Return the dimension of the coordinate.
+
+
+   .. py:attribute:: x
+      :type: float
+      :value: 0
+
+      The x-coordinate of the 3D Coordinate.
+
+
+   .. py:attribute:: y
+      :type: float
+      :value: 0
+
+      The y-coordinate of the 3D Coordinate.
+
+
+   .. py:attribute:: z
+      :type: float
+      :value: 0
+
+      The z-coordinate of the 3D Coordinate.
+
+
+   .. py:method:: __str__()
+
+      Return str(self).
+
+
+   .. py:method:: __eq__(other)
+
+      Return self==value.
+
+
+   .. py:method:: from_string(s: str)
+      :staticmethod:
+
+      Parses a string to create a 3D Coordinate.
+
+      :param str s: The string to parse.
+      :return: The 3D Coordinate.
+      :rtype: Coordiante3D
 
 
 

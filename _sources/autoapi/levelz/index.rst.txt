@@ -9,21 +9,14 @@
 
 
 
-Subpackages
------------
-.. toctree::
-   :titlesonly:
-   :maxdepth: 3
-
-   coord/index.rst
-
-
 Submodules
 ----------
 .. toctree::
    :titlesonly:
    :maxdepth: 1
 
+   block/index.rst
+   coord/index.rst
    level/index.rst
 
 
@@ -37,6 +30,10 @@ Classes
 
    levelz.Dimension
    levelz.Coordinate
+   levelz.Coordinate2D
+   levelz.Coordinate3D
+   levelz.Block
+   levelz.LevelObject
 
 
 
@@ -47,6 +44,16 @@ Classes
    Bases: :py:obj:`enum.Enum`
 
    Represents a Game Dimension.
+
+   .. py:property:: is2D
+
+      Returns True if the Dimension is 2D.
+
+
+   .. py:property:: is3D
+
+      Returns True if the Dimension is 3D.
+
 
    .. py:attribute:: TWO
       :value: 2
@@ -60,24 +67,13 @@ Classes
       Represents a 3D Space.
 
 
-   .. py:method:: is2D()
-
-      Returns True if the Dimension is 2D.
-
-
-   .. py:method:: is3D()
-
-      Returns True if the Dimension is 3D.
-
-
 
 .. py:class:: Coordinate
 
 
    Bases: :py:obj:`abc.ABC`
 
-   Helper class that provides a standard way to create an ABC using
-   inheritance.
+   Represents a Game Coordinate.
 
    .. py:property:: magnitude
       :abstractmethod:
@@ -89,6 +85,190 @@ Classes
       :abstractmethod:
 
       Return the dimension of the coordinate.
+
+
+
+.. py:class:: Coordinate2D(x: float, y: float)
+
+
+   Bases: :py:obj:`Coordinate`
+
+   Represents a 2-Dimensional Coordinate.
+
+   .. py:property:: magnitude
+
+      Return the magnitude of the coordinate.
+
+
+   .. py:property:: dimension
+
+      Return the dimension of the coordinate.
+
+
+   .. py:attribute:: x
+      :type: float
+      :value: 0
+
+      The x-coordinate of the 2D Coordinate.
+
+
+   .. py:attribute:: y
+      :type: float
+      :value: 0
+
+      The y-coordinate of the 2D Coordinate.
+
+
+   .. py:method:: __str__()
+
+      Return str(self).
+
+
+   .. py:method:: __eq__(other)
+
+      Return self==value.
+
+
+   .. py:method:: from_string(s: str)
+      :staticmethod:
+
+      Parses a string to create a 2D Coordinate.
+
+      :param str s: The string to parse.
+      :return: The 2D Coordinate.
+      :rtype: Coordinate2D
+
+
+
+.. py:class:: Coordinate3D(x: float, y: float, z: float)
+
+
+   Bases: :py:obj:`Coordinate`
+
+   Represents a 3-Dimensional Coordinate.
+
+   .. py:property:: magnitude
+
+      Return the magnitude of the coordinate.
+
+
+   .. py:property:: dimension
+
+      Return the dimension of the coordinate.
+
+
+   .. py:attribute:: x
+      :type: float
+      :value: 0
+
+      The x-coordinate of the 3D Coordinate.
+
+
+   .. py:attribute:: y
+      :type: float
+      :value: 0
+
+      The y-coordinate of the 3D Coordinate.
+
+
+   .. py:attribute:: z
+      :type: float
+      :value: 0
+
+      The z-coordinate of the 3D Coordinate.
+
+
+   .. py:method:: __str__()
+
+      Return str(self).
+
+
+   .. py:method:: __eq__(other)
+
+      Return self==value.
+
+
+   .. py:method:: from_string(s: str)
+      :staticmethod:
+
+      Parses a string to create a 3D Coordinate.
+
+      :param str s: The string to parse.
+      :return: The 3D Coordinate.
+      :rtype: Coordiante3D
+
+
+
+.. py:class:: Block(name: str, properties: dict = {})
+
+
+   Represents a Block in a Level.
+
+   .. py:property:: name
+
+      Returns the name of the Block.
+
+
+   .. py:property:: properties
+
+      Returns an immutable copy of the properties for the Block.
+
+
+   .. py:attribute:: _name
+      :type: str
+      :value: ''
+
+      
+
+   .. py:attribute:: _properties
+      :type: dict
+
+      
+
+   .. py:method:: __str__()
+
+      Return str(self).
+
+
+   .. py:method:: __eq__(other)
+
+      Return self==value.
+
+
+
+.. py:class:: LevelObject(block: Block, coordinate: levelz.coord.Coordinate)
+
+
+   Utility Object for representing a Level Block and its Coordinate.
+
+   .. py:property:: block
+
+      Returns the Block of the LevelObject.
+
+
+   .. py:property:: coordinate
+
+      Returns the Coordinate of the LevelObject.
+
+
+   .. py:attribute:: _block
+      :type: Block
+
+      
+
+   .. py:attribute:: _coordinate
+      :type: levelz.coord.Coordinate
+
+      
+
+   .. py:method:: __str__()
+
+      Return str(self).
+
+
+   .. py:method:: __eq__(other)
+
+      Return self==value.
 
 
 

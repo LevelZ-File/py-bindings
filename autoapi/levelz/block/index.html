@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../_static/favicon.ico">
+    <link rel="icon" type="image/png" href="../../../_static/favicon.png" sizes="1080x1080">
+    <title>levelz.block &#8212; levelz-py  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/classic.css?v=def86cc0" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
+    
+    <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="levelz.coord" href="../coord/index.html" />
+    <link rel="prev" title="levelz" href="../index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../coord/index.html" title="levelz.coord"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="levelz"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">levelz-py  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../index.html" accesskey="U"><code class="xref py py-mod docutils literal notranslate"><span class="pre">levelz</span></code></a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">levelz.block</span></code></a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="module-levelz.block">
+<span id="levelz-block"></span><h1><a class="reference internal" href="#module-levelz.block" title="levelz.block"><code class="xref py py-mod docutils literal notranslate"><span class="pre">levelz.block</span></code></a><a class="headerlink" href="#module-levelz.block" title="Link to this heading">¶</a></h1>
+<section id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+<section id="classes">
+<h3>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h3>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#levelz.block.Block" title="levelz.block.Block"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Block</span></code></a></p></td>
+<td><p>Represents a Block in a Level.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#levelz.block.LevelObject" title="levelz.block.LevelObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LevelObject</span></code></a></p></td>
+<td><p>Utility Object for representing a Level Block and its Coordinate.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py class">
+<dt class="sig sig-object py" id="levelz.block.Block">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">levelz.block.</span></span><span class="sig-name descname"><span class="pre">Block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">properties</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#levelz.block.Block" title="Link to this definition">¶</a></dt>
+<dd><p>Represents a Block in a Level.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="levelz.block.Block.name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#levelz.block.Block.name" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the name of the Block.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="levelz.block.Block.properties">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">properties</span></span><a class="headerlink" href="#levelz.block.Block.properties" title="Link to this definition">¶</a></dt>
+<dd><p>Returns an immutable copy of the properties for the Block.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="levelz.block.Block._name">
+<span class="sig-name descname"><span class="pre">_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="headerlink" href="#levelz.block.Block._name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="levelz.block.Block._properties">
+<span class="sig-name descname"><span class="pre">_properties</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span></em><a class="headerlink" href="#levelz.block.Block._properties" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="levelz.block.Block.__str__">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#levelz.block.Block.__str__" title="Link to this definition">¶</a></dt>
+<dd><p>Return str(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="levelz.block.Block.__eq__">
+<span class="sig-name descname"><span class="pre">__eq__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#levelz.block.Block.__eq__" title="Link to this definition">¶</a></dt>
+<dd><p>Return self==value.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="levelz.block.LevelObject">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">levelz.block.</span></span><span class="sig-name descname"><span class="pre">LevelObject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">block</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#levelz.block.Block" title="levelz.block.Block"><span class="pre">Block</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">coordinate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../coord/index.html#levelz.coord.Coordinate" title="levelz.coord.Coordinate"><span class="pre">levelz.coord.Coordinate</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#levelz.block.LevelObject" title="Link to this definition">¶</a></dt>
+<dd><p>Utility Object for representing a Level Block and its Coordinate.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="levelz.block.LevelObject.block">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">block</span></span><a class="headerlink" href="#levelz.block.LevelObject.block" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the Block of the LevelObject.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="levelz.block.LevelObject.coordinate">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">coordinate</span></span><a class="headerlink" href="#levelz.block.LevelObject.coordinate" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the Coordinate of the LevelObject.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="levelz.block.LevelObject._block">
+<span class="sig-name descname"><span class="pre">_block</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#levelz.block.Block" title="levelz.block.Block"><span class="pre">Block</span></a></em><a class="headerlink" href="#levelz.block.LevelObject._block" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="levelz.block.LevelObject._coordinate">
+<span class="sig-name descname"><span class="pre">_coordinate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../coord/index.html#levelz.coord.Coordinate" title="levelz.coord.Coordinate"><span class="pre">levelz.coord.Coordinate</span></a></em><a class="headerlink" href="#levelz.block.LevelObject._coordinate" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="levelz.block.LevelObject.__str__">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#levelz.block.LevelObject.__str__" title="Link to this definition">¶</a></dt>
+<dd><p>Return str(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="levelz.block.LevelObject.__eq__">
+<span class="sig-name descname"><span class="pre">__eq__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#levelz.block.LevelObject.__eq__" title="Link to this definition">¶</a></dt>
+<dd><p>Return self==value.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../../../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">levelz.block</span></code></a><ul>
+<li><a class="reference internal" href="#module-contents">Module Contents</a><ul>
+<li><a class="reference internal" href="#classes">Classes</a><ul>
+<li><a class="reference internal" href="#levelz.block.Block"><code class="docutils literal notranslate"><span class="pre">Block</span></code></a><ul>
+<li><a class="reference internal" href="#levelz.block.Block.name"><code class="docutils literal notranslate"><span class="pre">Block.name</span></code></a></li>
+<li><a class="reference internal" href="#levelz.block.Block.properties"><code class="docutils literal notranslate"><span class="pre">Block.properties</span></code></a></li>
+<li><a class="reference internal" href="#levelz.block.Block._name"><code class="docutils literal notranslate"><span class="pre">Block._name</span></code></a></li>
+<li><a class="reference internal" href="#levelz.block.Block._properties"><code class="docutils literal notranslate"><span class="pre">Block._properties</span></code></a></li>
+<li><a class="reference internal" href="#levelz.block.Block.__str__"><code class="docutils literal notranslate"><span class="pre">Block.__str__()</span></code></a></li>
+<li><a class="reference internal" href="#levelz.block.Block.__eq__"><code class="docutils literal notranslate"><span class="pre">Block.__eq__()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#levelz.block.LevelObject"><code class="docutils literal notranslate"><span class="pre">LevelObject</span></code></a><ul>
+<li><a class="reference internal" href="#levelz.block.LevelObject.block"><code class="docutils literal notranslate"><span class="pre">LevelObject.block</span></code></a></li>
+<li><a class="reference internal" href="#levelz.block.LevelObject.coordinate"><code class="docutils literal notranslate"><span class="pre">LevelObject.coordinate</span></code></a></li>
+<li><a class="reference internal" href="#levelz.block.LevelObject._block"><code class="docutils literal notranslate"><span class="pre">LevelObject._block</span></code></a></li>
+<li><a class="reference internal" href="#levelz.block.LevelObject._coordinate"><code class="docutils literal notranslate"><span class="pre">LevelObject._coordinate</span></code></a></li>
+<li><a class="reference internal" href="#levelz.block.LevelObject.__str__"><code class="docutils literal notranslate"><span class="pre">LevelObject.__str__()</span></code></a></li>
+<li><a class="reference internal" href="#levelz.block.LevelObject.__eq__"><code class="docutils literal notranslate"><span class="pre">LevelObject.__eq__()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="../index.html"
+                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">levelz</span></code></a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="../coord/index.html"
+                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">levelz.coord</span></code></a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/autoapi/levelz/block/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../coord/index.html" title="levelz.coord"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="levelz"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">levelz-py  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../index.html" ><code class="xref py py-mod docutils literal notranslate"><span class="pre">levelz</span></code></a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">levelz.block</span></code></a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Calculus Games.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+    </div>
+  </body>
+</html>

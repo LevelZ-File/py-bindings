@@ -1,0 +1,93 @@
+:py:mod:`levelz.block`
+======================
+
+.. py:module:: levelz.block
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   levelz.block.Block
+   levelz.block.LevelObject
+
+
+
+
+.. py:class:: Block(name: str, properties: dict = {})
+
+
+   Represents a Block in a Level.
+
+   .. py:property:: name
+
+      Returns the name of the Block.
+
+
+   .. py:property:: properties
+
+      Returns an immutable copy of the properties for the Block.
+
+
+   .. py:attribute:: _name
+      :type: str
+      :value: ''
+
+      
+
+   .. py:attribute:: _properties
+      :type: dict
+
+      
+
+   .. py:method:: __str__()
+
+      Return str(self).
+
+
+   .. py:method:: __eq__(other)
+
+      Return self==value.
+
+
+
+.. py:class:: LevelObject(block: Block, coordinate: levelz.coord.Coordinate)
+
+
+   Utility Object for representing a Level Block and its Coordinate.
+
+   .. py:property:: block
+
+      Returns the Block of the LevelObject.
+
+
+   .. py:property:: coordinate
+
+      Returns the Coordinate of the LevelObject.
+
+
+   .. py:attribute:: _block
+      :type: Block
+
+      
+
+   .. py:attribute:: _coordinate
+      :type: levelz.coord.Coordinate
+
+      
+
+   .. py:method:: __str__()
+
+      Return str(self).
+
+
+   .. py:method:: __eq__(other)
+
+      Return self==value.
+
+
+

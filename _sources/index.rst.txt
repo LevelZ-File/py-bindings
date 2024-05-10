@@ -1,11 +1,15 @@
-Welcome to levelz-py's documentation!
+levelz-py
 =====================================
 
+.. mdinclude:: ../README.md
+
+API Reference
+==================
+
 .. toctree::
-   :maxdepth: 2
    :caption: Contents:
 
-Indices and tables
+Index
 ==================
 
 * :ref:`genindex`

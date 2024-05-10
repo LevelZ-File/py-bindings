@@ -13,6 +13,7 @@ Classes
 .. autoapisummary::
 
    levelz.level.Dimension
+   levelz.level.Scroll
 
 
 
@@ -23,6 +24,16 @@ Classes
    Bases: :py:obj:`enum.Enum`
 
    Represents a Game Dimension.
+
+   .. py:property:: is2D
+
+      Returns True if the Dimension is 2D.
+
+
+   .. py:property:: is3D
+
+      Returns True if the Dimension is 3D.
+
 
    .. py:attribute:: TWO
       :value: 2
@@ -36,14 +47,42 @@ Classes
       Represents a 3D Space.
 
 
-   .. py:method:: is2D()
 
-      Returns True if the Dimension is 2D.
+.. py:class:: Scroll
 
 
-   .. py:method:: is3D()
+   Bases: :py:obj:`enum.Enum`
 
-      Returns True if the Dimension is 3D.
+   Represents the scroll direction of a 2D Level.
+
+   .. py:attribute:: NONE
+      :value: 'none'
+
+      No Scrolling
+
+
+   .. py:attribute:: HORIZONTAL_LEFT
+      :value: 'horizontal-left'
+
+      Horizontal Scrolling moving left
+
+
+   .. py:attribute:: HORIZONTAL_RIGHT
+      :value: 'horizontal-right'
+
+      Horizontal Scrolling moving right
+
+
+   .. py:attribute:: VERTICAL_UP
+      :value: 'vertical-up'
+
+      Vertical Scrolling moving up
+
+
+   .. py:attribute:: VERTICAL_DOWN
+      :value: 'vertical-down'
+
+      Vertical Scrolling moving down
 
 
 
