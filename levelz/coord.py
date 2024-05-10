@@ -2,6 +2,7 @@ from abc import ABC, abstractmethod
 from levelz.level import Dimension
 
 class Coordinate(ABC):
+    """Represents a Game Coordinate."""
 
     @property
     @abstractmethod
@@ -42,7 +43,28 @@ class Coordinate2D(Coordinate):
     def dimension(self):
         return Dimension.TWO
 
-class Coordiante3D(Coordinate):
+    def __str__(self):
+        return f"[{self.x}, {self.y}]"
+
+    def __eq__(self, other):
+        return self.x == other.x and self.y == other.y
+
+    @staticmethod
+    def from_string(s: str):
+        """
+        Parses a string to create a 2D Coordinate.
+
+        :param str s: The string to parse.
+        :return: The 2D Coordinate.
+        :rtype: Coordinate2D
+        """
+        s0 = s.strip()
+        s1 = s0[1:-1].split(",")
+        x = float(s1[0].strip())
+        y = float(s1[1].strip())
+        return Coordinate2D(x, y)
+
+class Coordinate3D(Coordinate):
     """Represents a 3-Dimensional Coordinate."""
 
     x: float = 0
@@ -73,3 +95,25 @@ class Coordiante3D(Coordinate):
     @property
     def dimension(self):
         return Dimension.THREE
+
+    def __str__(self):
+        return f"[{self.x}, {self.y}, {self.z}]"
+    
+    def __eq__(self, other):
+        return self.x == other.x and self.y == other.y and self.z == other.z
+    
+    @staticmethod
+    def from_string(s: str):
+        """
+        Parses a string to create a 3D Coordinate.
+
+        :param str s: The string to parse.
+        :return: The 3D Coordinate.
+        :rtype: Coordiante3D
+        """
+        s0 = s.strip()
+        s1 = s0[1:-1].split(",")
+        x = float(s1[0].strip())
+        y = float(s1[1].strip())
+        z = float(s1[2].strip())
+        return Coordinate3D(x, y, z)
