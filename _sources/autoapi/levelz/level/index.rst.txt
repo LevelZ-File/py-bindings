@@ -14,6 +14,9 @@ Classes
 
    levelz.level.Dimension
    levelz.level.Scroll
+   levelz.level.Level
+   levelz.level.Level2D
+   levelz.level.Level3D
 
 
 
@@ -83,6 +86,80 @@ Classes
       :value: 'vertical-down'
 
       Vertical Scrolling moving down
+
+
+
+.. py:class:: Level(dimension: Dimension)
+
+
+   Bases: :py:obj:`abc.ABC`
+
+   Represents a LevelZ level.
+
+   .. py:property:: dimension
+
+      Returns the Dimension of the Level.
+
+
+   .. py:property:: blocks
+
+      Returns an immutable copy of the blocks in the Level.
+
+
+   .. py:property:: headers
+
+      Returns an immutable copy of the headers in the Level.
+
+
+   .. py:property:: spawn
+
+      Returns the spawn point of the Level.
+
+
+   .. py:attribute:: _dimension
+      :type: Dimension
+
+      
+
+   .. py:attribute:: _blocks
+      :type: set[levelz.block.LevelObject]
+
+      
+
+   .. py:attribute:: _headers
+      :type: dict[str, str]
+
+      
+
+
+.. py:class:: Level2D(headers: dict[str, str] = {}, blocks: set[levelz.block.LevelObject] = set())
+
+
+   Bases: :py:obj:`Level`
+
+   Represents a 2D Level.
+
+   .. py:property:: scroll
+
+      Returns the Scroll of the Level.
+
+
+   .. py:property:: spawn
+
+      Returns the spawn point of the Level.
+
+
+
+.. py:class:: Level3D(headers: dict[str, str] = {}, blocks: set[levelz.block.LevelObject] = set())
+
+
+   Bases: :py:obj:`Level`
+
+   Represents a 3D Level.
+
+   .. py:property:: spawn
+
+      Returns the spawn point of the Level.
 
 
 
