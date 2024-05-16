@@ -1,6 +1,5 @@
 from enum import Enum
-from abc import ABC, abstractmethod
-from typing import cast
+from abc import ABCMeta
 
 from levelz.block import LevelObject
 from levelz.coord import Coordinate2D, Coordinate3D
@@ -42,7 +41,7 @@ class Scroll(Enum):
     VERTICAL_DOWN = 'vertical-down'
     """Vertical Scrolling moving down"""
 
-class Level(ABC):
+class Level(metaclass=ABCMeta):
     """Represents a LevelZ level."""
 
     _dimension: Dimension

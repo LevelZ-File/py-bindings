@@ -1,7 +1,7 @@
-from abc import ABC, abstractmethod
+from abc import ABCMeta, abstractmethod
 from levelz.level import Dimension
 
-class Coordinate(ABC):
+class Coordinate(metaclass=ABCMeta):
     """Represents a Game Coordinate."""
 
     @property
