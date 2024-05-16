@@ -4,7 +4,8 @@ author = 'Calculus Games'
 
 extensions = [
     'autoapi.extension',
-    'sphinx_favicon'
+    'sphinx_favicon',
+    'sphinx_mdinclude'
 ]
 
 autoapi_dirs = ['../levelz']
