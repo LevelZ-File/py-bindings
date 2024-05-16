@@ -92,8 +92,6 @@ Classes
 .. py:class:: Level(dimension: Dimension)
 
 
-   Bases: :py:obj:`abc.ABC`
-
    Represents a LevelZ level.
 
    .. py:property:: dimension

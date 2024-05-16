@@ -22,8 +22,6 @@ Classes
 .. py:class:: Coordinate
 
 
-   Bases: :py:obj:`abc.ABC`
-
    Represents a Game Coordinate.
 
    .. py:property:: magnitude
