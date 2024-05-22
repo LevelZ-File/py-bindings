@@ -4,3 +4,4 @@ docs/build
 __pycache__
 *.inv
 .coverage
+coverage.lcov
