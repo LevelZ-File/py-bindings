@@ -1,6 +1,35 @@
 from levelz import Dimension, Coordinate2D, Coordinate3D
 import unittest
 
+class TestDimension(unittest.TestCase):
+    def test_dimension(self):
+        self.assertEqual(Dimension.TWO, 2)
+        self.assertEqual(Dimension.THREE, 3)
+
+        self.assertTrue(Dimension.TWO.is2D)
+        self.assertFalse(Dimension.TWO.is3D)
+    
+    def test_dimension_eq(self):
+        self.assertEqual(Dimension.TWO, 2)
+        self.assertEqual(Dimension.TWO, Dimension.TWO)
+        self.assertEqual(Dimension.THREE, 3)
+        self.assertEqual(Dimension.THREE, Dimension.THREE)
+        self.assertEqual(Dimension.TWO, "2")
+        self.assertEqual(Dimension.THREE, "3")
+
+        self.assertNotEqual(Dimension.TWO, 3)
+        self.assertNotEqual(Dimension.TWO, Dimension.THREE)
+        self.assertNotEqual(Dimension.THREE, 2)
+        self.assertNotEqual(Dimension.THREE, Dimension.TWO)
+        self.assertNotEqual(Dimension.THREE, "2")
+        self.assertNotEqual(Dimension.TWO, "3")
+        self.assertNotEqual(Dimension.TWO, None)
+
+    
+    def test_dimension_str(self):
+        self.assertEqual(str(Dimension.TWO), "2")
+        self.assertEqual(str(Dimension.THREE), "3")
+
 class TestCoordinate2D(unittest.TestCase):
     def test_magnitude(self):
         c = Coordinate2D(3, 4)
@@ -39,6 +68,8 @@ class TestCoordinate2D(unittest.TestCase):
         self.assertEqual(c4, [-3, -4])
         self.assertEqual(c4, "[-3, -4]")
         self.assertEqual(c4, (-3, -4))
+
+        self.assertNotEqual(c1, None)
 
 class TestCoordinate3D(unittest.TestCase):
     def test_magnitude(self):
@@ -85,3 +116,5 @@ class TestCoordinate3D(unittest.TestCase):
         self.assertEqual(c5, [-3, -4, 5])
         self.assertEqual(c5, "[-3, -4, 5]")
         self.assertEqual(c5, (-3, -4, 5))
+
+        self.assertNotEqual(c1, None)
