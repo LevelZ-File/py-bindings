@@ -2,26 +2,7 @@ from enum import Enum
 from abc import ABCMeta
 
 from levelz.block import LevelObject
-from levelz.coord import Coordinate2D, Coordinate3D
-
-class Dimension(Enum):
-    """Represents a Game Dimension."""
-
-    TWO = 2
-    """Represents a 2D Plane."""
-
-    THREE = 3
-    """Represents a 3D Space."""
-
-    @property
-    def is2D(self):
-        """Returns True if the Dimension is 2D."""
-        return self == Dimension.TWO
-    
-    @property
-    def is3D(self):
-        """Returns True if the Dimension is 3D."""
-        return self == Dimension.THREE
+from levelz.coord import Dimension, Coordinate2D, Coordinate3D
 
 class Scroll(Enum):
     """Represents the scroll direction of a 2D Level."""
@@ -46,9 +27,9 @@ class Level(metaclass=ABCMeta):
 
     _dimension: Dimension
 
-    _blocks: set[LevelObject] = set()
+    _blocks: list[LevelObject] = []
 
-    _headers: dict[str, str] = {}
+    _headers: dict[str, object] = {}
 
     def __init__(self, dimension: Dimension):
         """
@@ -77,7 +58,7 @@ class Level(metaclass=ABCMeta):
     def spawn(self):
         """Returns the spawn point of the Level."""
 
-        spawn = self._headers.get('spawn')
+        spawn = str(self._headers.get('spawn'))
         if (spawn == None): 
             return None
 
@@ -88,13 +69,13 @@ class Level(metaclass=ABCMeta):
     
 class Level2D(Level):
     """Represents a 2D Level."""
-    def __init__(self, headers: dict[str, str] = {}, blocks: set[LevelObject] = set()):
+    def __init__(self, headers: dict[str, object] = {}, blocks: list[LevelObject] = []):
         """
         Constructs a 2D Level.
 
         :param Scroll scroll: The Scroll of the Level.
         :param dict[str, object] headers: The headers of the Level.
-        :param set[LevelObject] blocks: The blocks in the Level.
+        :param list[LevelObject] blocks: The blocks in the Level.
         """
         super().__init__(Dimension.TWO)
         self._headers = headers
@@ -103,27 +84,29 @@ class Level2D(Level):
     @property
     def scroll(self):
         """Returns the Scroll of the Level."""
-        return self._headers.get('scroll', Scroll.NONE)
+        s = str(self._headers.get('scroll', "none"))
+        return Scroll[s.upper().replace("-", "_")]
     
     @property
     def spawn(self):
         """Returns the spawn point of the Level."""
-        return Coordinate2D.from_string(self._headers.get('spawn', "[0, 0]"))
+        return Coordinate2D.from_string(str(self._headers.get('spawn', "[0, 0]")))
 
 class Level3D(Level):
     """Represents a 3D Level."""
-    def __init__(self, headers: dict[str, str] = {}, blocks: set[LevelObject] = set()):
+    def __init__(self, headers: dict[str, object] = {}, blocks: list[LevelObject] = []):
         """
         Constructs a 3D Level.
 
         :param dict[str, object] headers: The headers of the Level.
-        :param set[LevelObject] blocks: The blocks in the Level.
+        :param list[LevelObject] blocks: The blocks in the Level.
         """
         super().__init__(Dimension.THREE)
+
         self._headers = headers
         self._blocks = blocks
 
     @property
     def spawn(self):
         """Returns the spawn point of the Level."""
-        return Coordinate3D.from_string(self._headers.get('spawn', "[0, 0, 0]"))
+        return Coordinate3D.from_string(str(self._headers.get('spawn', "[0, 0, 0]")))

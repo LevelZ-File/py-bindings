@@ -1,5 +1,36 @@
+from enum import Enum
 from abc import ABCMeta, abstractmethod
-from levelz.level import Dimension
+
+class Dimension(Enum):
+    """Represents a Game Dimension."""
+
+    TWO = 2
+    """Represents a 2D Plane."""
+
+    THREE = 3
+    """Represents a 3D Space."""
+
+    @property
+    def is2D(self):
+        """Returns True if the Dimension is 2D."""
+        return self == Dimension.TWO
+    
+    @property
+    def is3D(self):
+        """Returns True if the Dimension is 3D."""
+        return self == Dimension.THREE
+
+    def __str__(self):
+        return str(self.value)
+    
+    def __eq__(self, other):
+        if (isinstance(other, Dimension)):
+            return self.value == other.value
+
+        if (isinstance(other, int)):
+            return self.value == other
+
+        return False
 
 class Coordinate(metaclass=ABCMeta):
     """Represents a Game Coordinate."""
@@ -47,7 +78,19 @@ class Coordinate2D(Coordinate):
         return f"[{self.x}, {self.y}]"
 
     def __eq__(self, other):
-        return self.x == other.x and self.y == other.y
+        if (isinstance(other, Coordinate2D)):
+            return self.x == other.x and self.y == other.y
+        
+        if (isinstance(other, list)):
+            return self.x == other[0] and self.y == other[1]
+        
+        if (isinstance(other, tuple)):
+            return self.x == other[0] and self.y == other[1]
+
+        if (isinstance(other, str)):
+            return self == Coordinate2D.from_string(other)
+
+        return False
 
     @staticmethod
     def from_string(s: str):
@@ -100,7 +143,19 @@ class Coordinate3D(Coordinate):
         return f"[{self.x}, {self.y}, {self.z}]"
     
     def __eq__(self, other):
-        return self.x == other.x and self.y == other.y and self.z == other.z
+        if (isinstance(other, Coordinate3D)):
+            return self.x == other.x and self.y == other.y and self.z == other.z
+        
+        if (isinstance(other, list)):
+            return self.x == other[0] and self.y == other[1] and self.z == other[2]
+        
+        if (isinstance(other, tuple)):
+            return self.x == other[0] and self.y == other[1] and self.z == other[2]
+
+        if (isinstance(other, str)):
+            return self == Coordinate3D.from_string(other)
+
+        return False
     
     @staticmethod
     def from_string(s: str):

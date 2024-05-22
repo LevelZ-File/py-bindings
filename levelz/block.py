@@ -1,13 +1,13 @@
-from levelz.coord import Coordinate
+from levelz.coord import Coordinate, Coordinate2D, Coordinate3D
 
 class Block:
     """Represents a Block in a Level."""
 
     _name: str = ""
 
-    _properties: dict = {}
+    _properties: dict[str, object] = {}
 
-    def __init__(self, name: str, properties: dict = {}):
+    def __init__(self, name: str, properties: dict[str, object] = {}):
         """
         Constructs a Block.
 
@@ -40,7 +40,13 @@ class Block:
         return s0
 
     def __eq__(self, other):
-        return self._name == other._name and self._properties == other._properties
+        if (isinstance(other, Block)):
+            return self._name == other._name and self._properties == other._properties
+        
+        if (isinstance(other, str)):
+            return self._name == other and len(self._properties) == 0
+
+        return False
 
 class LevelObject:
     """Utility Object for representing a Level Block and its Coordinate."""
@@ -49,14 +55,26 @@ class LevelObject:
 
     _coordinate: Coordinate
 
-    def __init__(self, block: Block, coordinate: Coordinate):
+    def __init__(self, block: Block | str, coordinate: Coordinate | list[int | float]):
         """
         Constructs a LevelObject.
 
         :param Block block: The Block of the LevelObject.
         :param Coordinate coordinate: The Coordinate of the LevelObject.
         """
+        if (isinstance(block, str)):
+            block = Block(block)
+
         self._block = block
+
+        if (isinstance(coordinate, list)):
+            if (len(coordinate) == 2):
+                coordinate = Coordinate2D(coordinate[0], coordinate[1])
+            elif (len(coordinate) == 3):
+                coordinate = Coordinate3D(coordinate[0], coordinate[1], coordinate[2])
+            else:
+                raise ValueError(f"Invalid Coordinate: {coordinate}")
+
         self._coordinate = coordinate
 
     @property
@@ -73,4 +91,7 @@ class LevelObject:
         return f"{self._block}: {self._coordinate}"
     
     def __eq__(self, other):
-        return self._block == other._block and self._coordinate == other._coordinate
+        if (isinstance(other, LevelObject)):
+            return self._block == other._block and self._coordinate == other._coordinate
+        
+        return False
