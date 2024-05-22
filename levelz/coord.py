@@ -29,6 +29,9 @@ class Dimension(Enum):
 
         if (isinstance(other, int)):
             return self.value == other
+        
+        if (isinstance(other, str)):
+            return self.value == int(other)
 
         return False
 
