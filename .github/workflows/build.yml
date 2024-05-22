@@ -38,7 +38,7 @@ jobs:
     - name: Install Dependencies
       run: pip install -r requirements.txt
     - name: Run Tests
-      run: pytest --cov=levelz test/
+      run: pytest --cov=levelz test/ --cov-report term-missing
   
   deploy:
     needs: test
