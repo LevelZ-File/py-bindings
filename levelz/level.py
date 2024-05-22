@@ -54,19 +54,6 @@ class Level(metaclass=ABCMeta):
         """Returns an immutable copy of the headers in the Level."""
         return self._headers.copy()
     
-    @property
-    def spawn(self):
-        """Returns the spawn point of the Level."""
-
-        spawn = str(self._headers.get('spawn'))
-        if (spawn == None): 
-            return None
-
-        if (self._dimension.is2D):
-            return Coordinate2D.from_string(spawn)
-        else:
-            return Coordinate3D.from_string(spawn)
-    
 class Level2D(Level):
     """Represents a 2D Level."""
     def __init__(self, headers: dict[str, object] = {}, blocks: list[LevelObject] = []):
