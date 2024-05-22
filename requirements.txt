@@ -89,7 +89,7 @@ nvidia-nvjitlink-cu12==12.4.99
 nvidia-nvtx-cu12==12.1.105
 overrides==7.7.0
 packaging==24.0
-pandas==2.2.1
+pandas==2.2.2
 pandocfilters==1.5.1
 parso==0.8.3
 pexpect==4.9.0
