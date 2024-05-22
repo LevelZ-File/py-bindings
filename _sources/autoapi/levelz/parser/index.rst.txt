@@ -1,0 +1,93 @@
+:py:mod:`levelz.parser`
+=======================
+
+.. py:module:: levelz.parser
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   levelz.parser.parse_level
+   levelz.parser.parse_file
+   levelz.parser.parse_lines
+   levelz.parser.__split
+   levelz.parser.__objectify
+   levelz.parser.__roll
+   levelz.parser.__readHeaders
+   levelz.parser.__read2DPoints
+   levelz.parser.__read3DPoints
+   levelz.parser.__readLine
+   levelz.parser.__readBlock
+   levelz.parser.__readRawBlock
+
+
+
+Attributes
+~~~~~~~~~~
+
+.. autoapisummary::
+
+   levelz.parser.HEADER_END
+   levelz.parser.END
+
+
+.. py:data:: HEADER_END
+   :value: '---'
+
+   The end of the Header section.
+
+
+.. py:data:: END
+   :value: 'end'
+
+   The end of a Level.
+
+
+.. py:function:: parse_level(level: str)
+
+   Parses a Level from a string. Uses '\n' as the line separator.
+
+
+.. py:function:: parse_file(file: str)
+
+   Parses a Level from a file.
+
+
+.. py:function:: parse_lines(level: list[str])
+
+   Parses a Level from a list of strings.
+
+
+.. py:function:: __split(level: list[str])
+
+
+.. py:function:: __objectify(input: str)
+
+
+.. py:function:: __roll(blocks: list[levelz.block.Block], chances: list[float])
+
+
+.. py:function:: __readHeaders(headers: list[str])
+
+
+.. py:function:: __read2DPoints(input: str)
+
+
+.. py:function:: __read3DPoints(input: str)
+
+
+.. py:function:: __readLine(input: str, threeD: bool = False)
+
+
+.. py:function:: __readBlock(line: str)
+
+
+.. py:function:: __readRawBlock(input: str)
+
+

@@ -55,17 +55,63 @@
 <h3>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h3>
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#levelz.coord.Coordinate" title="levelz.coord.Coordinate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Coordinate</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#levelz.coord.Dimension" title="levelz.coord.Dimension"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dimension</span></code></a></p></td>
+<td><p>Represents a Game Dimension.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#levelz.coord.Coordinate" title="levelz.coord.Coordinate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Coordinate</span></code></a></p></td>
 <td><p>Represents a Game Coordinate.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#levelz.coord.Coordinate2D" title="levelz.coord.Coordinate2D"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Coordinate2D</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#levelz.coord.Coordinate2D" title="levelz.coord.Coordinate2D"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Coordinate2D</span></code></a></p></td>
 <td><p>Represents a 2-Dimensional Coordinate.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#levelz.coord.Coordinate3D" title="levelz.coord.Coordinate3D"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Coordinate3D</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#levelz.coord.Coordinate3D" title="levelz.coord.Coordinate3D"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Coordinate3D</span></code></a></p></td>
 <td><p>Represents a 3-Dimensional Coordinate.</p></td>
 </tr>
 </tbody>
 </table>
+<dl class="py class">
+<dt class="sig sig-object py" id="levelz.coord.Dimension">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">levelz.coord.</span></span><span class="sig-name descname"><span class="pre">Dimension</span></span><a class="headerlink" href="#levelz.coord.Dimension" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-obj docutils literal notranslate"><span class="pre">enum.Enum</span></code></p>
+<p>Represents a Game Dimension.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="levelz.coord.Dimension.is2D">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is2D</span></span><a class="headerlink" href="#levelz.coord.Dimension.is2D" title="Link to this definition">¶</a></dt>
+<dd><p>Returns True if the Dimension is 2D.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="levelz.coord.Dimension.is3D">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is3D</span></span><a class="headerlink" href="#levelz.coord.Dimension.is3D" title="Link to this definition">¶</a></dt>
+<dd><p>Returns True if the Dimension is 3D.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="levelz.coord.Dimension.TWO">
+<span class="sig-name descname"><span class="pre">TWO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#levelz.coord.Dimension.TWO" title="Link to this definition">¶</a></dt>
+<dd><p>Represents a 2D Plane.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="levelz.coord.Dimension.THREE">
+<span class="sig-name descname"><span class="pre">THREE</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#levelz.coord.Dimension.THREE" title="Link to this definition">¶</a></dt>
+<dd><p>Represents a 3D Space.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="levelz.coord.Dimension.__str__">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#levelz.coord.Dimension.__str__" title="Link to this definition">¶</a></dt>
+<dd><p>Return str(self).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="levelz.coord.Dimension.__eq__">
+<span class="sig-name descname"><span class="pre">__eq__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#levelz.coord.Dimension.__eq__" title="Link to this definition">¶</a></dt>
+<dd><p>Return self==value.</p>
+</dd></dl>
+
+</dd></dl>
+
 <dl class="py class">
 <dt class="sig sig-object py" id="levelz.coord.Coordinate">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">levelz.coord.</span></span><span class="sig-name descname"><span class="pre">Coordinate</span></span><a class="headerlink" href="#levelz.coord.Coordinate" title="Link to this definition">¶</a></dt>
@@ -227,6 +273,15 @@
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">levelz.coord</span></code></a><ul>
 <li><a class="reference internal" href="#module-contents">Module Contents</a><ul>
 <li><a class="reference internal" href="#classes">Classes</a><ul>
+<li><a class="reference internal" href="#levelz.coord.Dimension"><code class="docutils literal notranslate"><span class="pre">Dimension</span></code></a><ul>
+<li><a class="reference internal" href="#levelz.coord.Dimension.is2D"><code class="docutils literal notranslate"><span class="pre">Dimension.is2D</span></code></a></li>
+<li><a class="reference internal" href="#levelz.coord.Dimension.is3D"><code class="docutils literal notranslate"><span class="pre">Dimension.is3D</span></code></a></li>
+<li><a class="reference internal" href="#levelz.coord.Dimension.TWO"><code class="docutils literal notranslate"><span class="pre">Dimension.TWO</span></code></a></li>
+<li><a class="reference internal" href="#levelz.coord.Dimension.THREE"><code class="docutils literal notranslate"><span class="pre">Dimension.THREE</span></code></a></li>
+<li><a class="reference internal" href="#levelz.coord.Dimension.__str__"><code class="docutils literal notranslate"><span class="pre">Dimension.__str__()</span></code></a></li>
+<li><a class="reference internal" href="#levelz.coord.Dimension.__eq__"><code class="docutils literal notranslate"><span class="pre">Dimension.__eq__()</span></code></a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#levelz.coord.Coordinate"><code class="docutils literal notranslate"><span class="pre">Coordinate</span></code></a><ul>
 <li><a class="reference internal" href="#levelz.coord.Coordinate.magnitude"><code class="docutils literal notranslate"><span class="pre">Coordinate.magnitude</span></code></a></li>
 <li><a class="reference internal" href="#levelz.coord.Coordinate.dimension"><code class="docutils literal notranslate"><span class="pre">Coordinate.dimension</span></code></a></li>

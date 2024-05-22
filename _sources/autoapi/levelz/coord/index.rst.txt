@@ -12,10 +12,51 @@ Classes
 
 .. autoapisummary::
 
+   levelz.coord.Dimension
    levelz.coord.Coordinate
    levelz.coord.Coordinate2D
    levelz.coord.Coordinate3D
 
+
+
+
+.. py:class:: Dimension
+
+
+   Bases: :py:obj:`enum.Enum`
+
+   Represents a Game Dimension.
+
+   .. py:property:: is2D
+
+      Returns True if the Dimension is 2D.
+
+
+   .. py:property:: is3D
+
+      Returns True if the Dimension is 3D.
+
+
+   .. py:attribute:: TWO
+      :value: 2
+
+      Represents a 2D Plane.
+
+
+   .. py:attribute:: THREE
+      :value: 3
+
+      Represents a 3D Space.
+
+
+   .. py:method:: __str__()
+
+      Return str(self).
+
+
+   .. py:method:: __eq__(other)
+
+      Return self==value.
 
 
 

@@ -43,6 +43,7 @@
  | <a href="#B"><strong>B</strong></a>
  | <a href="#C"><strong>C</strong></a>
  | <a href="#D"><strong>D</strong></a>
+ | <a href="#E"><strong>E</strong></a>
  | <a href="#F"><strong>F</strong></a>
  | <a href="#H"><strong>H</strong></a>
  | <a href="#I"><strong>I</strong></a>
@@ -72,13 +73,35 @@
 </li>
         <li><a href="autoapi/levelz/coord/index.html#levelz.coord.Coordinate3D.__eq__">(levelz.coord.Coordinate3D method)</a>
 </li>
+        <li><a href="autoapi/levelz/coord/index.html#levelz.coord.Dimension.__eq__">(levelz.coord.Dimension method)</a>
+</li>
         <li><a href="autoapi/levelz/index.html#levelz.Coordinate2D.__eq__">(levelz.Coordinate2D method)</a>
 </li>
         <li><a href="autoapi/levelz/index.html#levelz.Coordinate3D.__eq__">(levelz.Coordinate3D method)</a>
 </li>
+        <li><a href="autoapi/levelz/index.html#levelz.Dimension.__eq__">(levelz.Dimension method)</a>
+</li>
         <li><a href="autoapi/levelz/index.html#levelz.LevelObject.__eq__">(levelz.LevelObject method)</a>
 </li>
       </ul></li>
+      <li><a href="autoapi/levelz/parser/index.html#levelz.parser.__objectify">__objectify() (in module levelz.parser)</a>
+</li>
+      <li><a href="autoapi/levelz/parser/index.html#levelz.parser.__read2DPoints">__read2DPoints() (in module levelz.parser)</a>
+</li>
+      <li><a href="autoapi/levelz/parser/index.html#levelz.parser.__read3DPoints">__read3DPoints() (in module levelz.parser)</a>
+</li>
+      <li><a href="autoapi/levelz/parser/index.html#levelz.parser.__readBlock">__readBlock() (in module levelz.parser)</a>
+</li>
+      <li><a href="autoapi/levelz/parser/index.html#levelz.parser.__readHeaders">__readHeaders() (in module levelz.parser)</a>
+</li>
+      <li><a href="autoapi/levelz/parser/index.html#levelz.parser.__readLine">__readLine() (in module levelz.parser)</a>
+</li>
+      <li><a href="autoapi/levelz/parser/index.html#levelz.parser.__readRawBlock">__readRawBlock() (in module levelz.parser)</a>
+</li>
+      <li><a href="autoapi/levelz/parser/index.html#levelz.parser.__roll">__roll() (in module levelz.parser)</a>
+</li>
+      <li><a href="autoapi/levelz/parser/index.html#levelz.parser.__split">__split() (in module levelz.parser)</a>
+</li>
       <li><a href="autoapi/levelz/index.html#levelz.Block.__str__">__str__() (levelz.Block method)</a>
 
       <ul>
@@ -90,9 +113,13 @@
 </li>
         <li><a href="autoapi/levelz/coord/index.html#levelz.coord.Coordinate3D.__str__">(levelz.coord.Coordinate3D method)</a>
 </li>
+        <li><a href="autoapi/levelz/coord/index.html#levelz.coord.Dimension.__str__">(levelz.coord.Dimension method)</a>
+</li>
         <li><a href="autoapi/levelz/index.html#levelz.Coordinate2D.__str__">(levelz.Coordinate2D method)</a>
 </li>
         <li><a href="autoapi/levelz/index.html#levelz.Coordinate3D.__str__">(levelz.Coordinate3D method)</a>
+</li>
+        <li><a href="autoapi/levelz/index.html#levelz.Dimension.__str__">(levelz.Dimension method)</a>
 </li>
         <li><a href="autoapi/levelz/index.html#levelz.LevelObject.__str__">(levelz.LevelObject method)</a>
 </li>
@@ -208,7 +235,7 @@
       <li><a href="autoapi/levelz/index.html#levelz.Dimension">Dimension (class in levelz)</a>
 
       <ul>
-        <li><a href="autoapi/levelz/level/index.html#levelz.level.Dimension">(class in levelz.level)</a>
+        <li><a href="autoapi/levelz/coord/index.html#levelz.coord.Dimension">(class in levelz.coord)</a>
 </li>
       </ul></li>
       <li><a href="autoapi/levelz/coord/index.html#levelz.coord.Coordinate.dimension">dimension (levelz.coord.Coordinate property)</a>
@@ -232,6 +259,14 @@
   </ul></td>
 </tr></table>
 
+<h2 id="E">E</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autoapi/levelz/parser/index.html#levelz.parser.END">END (in module levelz.parser)</a>
+</li>
+  </ul></td>
+</tr></table>
+
 <h2 id="F">F</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
@@ -251,6 +286,8 @@
 <h2 id="H">H</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autoapi/levelz/parser/index.html#levelz.parser.HEADER_END">HEADER_END (in module levelz.parser)</a>
+</li>
       <li><a href="autoapi/levelz/index.html#levelz.Level.headers">headers (levelz.Level property)</a>
 
       <ul>
@@ -260,27 +297,35 @@
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="autoapi/levelz/level/index.html#levelz.level.Scroll.HORIZONTAL_LEFT">HORIZONTAL_LEFT (levelz.level.Scroll attribute)</a>
+
+      <ul>
+        <li><a href="autoapi/levelz/index.html#levelz.Scroll.HORIZONTAL_LEFT">(levelz.Scroll attribute)</a>
 </li>
+      </ul></li>
       <li><a href="autoapi/levelz/level/index.html#levelz.level.Scroll.HORIZONTAL_RIGHT">HORIZONTAL_RIGHT (levelz.level.Scroll attribute)</a>
+
+      <ul>
+        <li><a href="autoapi/levelz/index.html#levelz.Scroll.HORIZONTAL_RIGHT">(levelz.Scroll attribute)</a>
 </li>
+      </ul></li>
   </ul></td>
 </tr></table>
 
 <h2 id="I">I</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="autoapi/levelz/index.html#levelz.Dimension.is2D">is2D (levelz.Dimension property)</a>
+      <li><a href="autoapi/levelz/coord/index.html#levelz.coord.Dimension.is2D">is2D (levelz.coord.Dimension property)</a>
 
       <ul>
-        <li><a href="autoapi/levelz/level/index.html#levelz.level.Dimension.is2D">(levelz.level.Dimension property)</a>
+        <li><a href="autoapi/levelz/index.html#levelz.Dimension.is2D">(levelz.Dimension property)</a>
 </li>
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="autoapi/levelz/index.html#levelz.Dimension.is3D">is3D (levelz.Dimension property)</a>
+      <li><a href="autoapi/levelz/coord/index.html#levelz.coord.Dimension.is3D">is3D (levelz.coord.Dimension property)</a>
 
       <ul>
-        <li><a href="autoapi/levelz/level/index.html#levelz.level.Dimension.is3D">(levelz.level.Dimension property)</a>
+        <li><a href="autoapi/levelz/index.html#levelz.Dimension.is3D">(levelz.Dimension property)</a>
 </li>
       </ul></li>
   </ul></td>
@@ -313,8 +358,6 @@
         <li><a href="autoapi/levelz/block/index.html#levelz.block.LevelObject">(class in levelz.block)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     levelz
 
@@ -322,6 +365,8 @@
         <li><a href="autoapi/levelz/index.html#module-levelz">module</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     levelz.block
 
@@ -341,6 +386,13 @@
 
       <ul>
         <li><a href="autoapi/levelz/level/index.html#module-levelz.level">module</a>
+</li>
+      </ul></li>
+      <li>
+    levelz.parser
+
+      <ul>
+        <li><a href="autoapi/levelz/parser/index.html#module-levelz.parser">module</a>
 </li>
       </ul></li>
   </ul></td>
@@ -377,6 +429,8 @@
 </li>
         <li><a href="autoapi/levelz/level/index.html#module-levelz.level">levelz.level</a>
 </li>
+        <li><a href="autoapi/levelz/parser/index.html#module-levelz.parser">levelz.parser</a>
+</li>
       </ul></li>
   </ul></td>
 </tr></table>
@@ -393,13 +447,37 @@
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="autoapi/levelz/level/index.html#levelz.level.Scroll.NONE">NONE (levelz.level.Scroll attribute)</a>
+
+      <ul>
+        <li><a href="autoapi/levelz/index.html#levelz.Scroll.NONE">(levelz.Scroll attribute)</a>
 </li>
+      </ul></li>
   </ul></td>
 </tr></table>
 
 <h2 id="P">P</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autoapi/levelz/index.html#levelz.parse_file">parse_file() (in module levelz)</a>
+
+      <ul>
+        <li><a href="autoapi/levelz/parser/index.html#levelz.parser.parse_file">(in module levelz.parser)</a>
+</li>
+      </ul></li>
+      <li><a href="autoapi/levelz/index.html#levelz.parse_level">parse_level() (in module levelz)</a>
+
+      <ul>
+        <li><a href="autoapi/levelz/parser/index.html#levelz.parser.parse_level">(in module levelz.parser)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autoapi/levelz/index.html#levelz.parse_lines">parse_lines() (in module levelz)</a>
+
+      <ul>
+        <li><a href="autoapi/levelz/parser/index.html#levelz.parser.parse_lines">(in module levelz.parser)</a>
+</li>
+      </ul></li>
       <li><a href="autoapi/levelz/index.html#levelz.Block.properties">properties (levelz.Block property)</a>
 
       <ul>
@@ -412,21 +490,23 @@
 <h2 id="S">S</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="autoapi/levelz/level/index.html#levelz.level.Scroll">Scroll (class in levelz.level)</a>
+      <li><a href="autoapi/levelz/index.html#levelz.Scroll">Scroll (class in levelz)</a>
+
+      <ul>
+        <li><a href="autoapi/levelz/level/index.html#levelz.level.Scroll">(class in levelz.level)</a>
 </li>
+      </ul></li>
       <li><a href="autoapi/levelz/level/index.html#levelz.level.Level2D.scroll">scroll (levelz.level.Level2D property)</a>
 
       <ul>
         <li><a href="autoapi/levelz/index.html#levelz.Level2D.scroll">(levelz.Level2D property)</a>
 </li>
       </ul></li>
-      <li><a href="autoapi/levelz/index.html#levelz.Level.spawn">spawn (levelz.Level property)</a>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autoapi/levelz/level/index.html#levelz.level.Level2D.spawn">spawn (levelz.level.Level2D property)</a>
 
       <ul>
-        <li><a href="autoapi/levelz/level/index.html#levelz.level.Level.spawn">(levelz.level.Level property)</a>
-</li>
-        <li><a href="autoapi/levelz/level/index.html#levelz.level.Level2D.spawn">(levelz.level.Level2D property)</a>
-</li>
         <li><a href="autoapi/levelz/level/index.html#levelz.level.Level3D.spawn">(levelz.level.Level3D property)</a>
 </li>
         <li><a href="autoapi/levelz/index.html#levelz.Level2D.spawn">(levelz.Level2D property)</a>
@@ -440,18 +520,18 @@
 <h2 id="T">T</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="autoapi/levelz/index.html#levelz.Dimension.THREE">THREE (levelz.Dimension attribute)</a>
+      <li><a href="autoapi/levelz/coord/index.html#levelz.coord.Dimension.THREE">THREE (levelz.coord.Dimension attribute)</a>
 
       <ul>
-        <li><a href="autoapi/levelz/level/index.html#levelz.level.Dimension.THREE">(levelz.level.Dimension attribute)</a>
+        <li><a href="autoapi/levelz/index.html#levelz.Dimension.THREE">(levelz.Dimension attribute)</a>
 </li>
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="autoapi/levelz/index.html#levelz.Dimension.TWO">TWO (levelz.Dimension attribute)</a>
+      <li><a href="autoapi/levelz/coord/index.html#levelz.coord.Dimension.TWO">TWO (levelz.coord.Dimension attribute)</a>
 
       <ul>
-        <li><a href="autoapi/levelz/level/index.html#levelz.level.Dimension.TWO">(levelz.level.Dimension attribute)</a>
+        <li><a href="autoapi/levelz/index.html#levelz.Dimension.TWO">(levelz.Dimension attribute)</a>
 </li>
       </ul></li>
   </ul></td>
@@ -461,11 +541,19 @@
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="autoapi/levelz/level/index.html#levelz.level.Scroll.VERTICAL_DOWN">VERTICAL_DOWN (levelz.level.Scroll attribute)</a>
+
+      <ul>
+        <li><a href="autoapi/levelz/index.html#levelz.Scroll.VERTICAL_DOWN">(levelz.Scroll attribute)</a>
 </li>
+      </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="autoapi/levelz/level/index.html#levelz.level.Scroll.VERTICAL_UP">VERTICAL_UP (levelz.level.Scroll attribute)</a>
+
+      <ul>
+        <li><a href="autoapi/levelz/index.html#levelz.Scroll.VERTICAL_UP">(levelz.Scroll attribute)</a>
 </li>
+      </ul></li>
   </ul></td>
 </tr></table>
 

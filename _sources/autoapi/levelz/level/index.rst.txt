@@ -12,42 +12,11 @@ Classes
 
 .. autoapisummary::
 
-   levelz.level.Dimension
    levelz.level.Scroll
    levelz.level.Level
    levelz.level.Level2D
    levelz.level.Level3D
 
-
-
-
-.. py:class:: Dimension
-
-
-   Bases: :py:obj:`enum.Enum`
-
-   Represents a Game Dimension.
-
-   .. py:property:: is2D
-
-      Returns True if the Dimension is 2D.
-
-
-   .. py:property:: is3D
-
-      Returns True if the Dimension is 3D.
-
-
-   .. py:attribute:: TWO
-      :value: 2
-
-      Represents a 2D Plane.
-
-
-   .. py:attribute:: THREE
-      :value: 3
-
-      Represents a 3D Space.
 
 
 
@@ -89,7 +58,7 @@ Classes
 
 
 
-.. py:class:: Level(dimension: Dimension)
+.. py:class:: Level(dimension: levelz.coord.Dimension)
 
 
    Represents a LevelZ level.
@@ -109,28 +78,24 @@ Classes
       Returns an immutable copy of the headers in the Level.
 
 
-   .. py:property:: spawn
-
-      Returns the spawn point of the Level.
-
-
    .. py:attribute:: _dimension
-      :type: Dimension
+      :type: levelz.coord.Dimension
 
       
 
    .. py:attribute:: _blocks
-      :type: set[levelz.block.LevelObject]
+      :type: list[levelz.block.LevelObject]
+      :value: []
 
       
 
    .. py:attribute:: _headers
-      :type: dict[str, str]
+      :type: dict[str, object]
 
       
 
 
-.. py:class:: Level2D(headers: dict[str, str] = {}, blocks: set[levelz.block.LevelObject] = set())
+.. py:class:: Level2D(headers: dict[str, object] = {}, blocks: list[levelz.block.LevelObject] = [])
 
 
    Bases: :py:obj:`Level`
@@ -148,7 +113,7 @@ Classes
 
 
 
-.. py:class:: Level3D(headers: dict[str, str] = {}, blocks: set[levelz.block.LevelObject] = set())
+.. py:class:: Level3D(headers: dict[str, object] = {}, blocks: list[levelz.block.LevelObject] = [])
 
 
    Bases: :py:obj:`Level`
