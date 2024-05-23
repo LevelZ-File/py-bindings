@@ -43,9 +43,6 @@
             
   <section id="levelz-py">
 <h1>levelz-py<a class="headerlink" href="#levelz-py" title="Link to this heading">¶</a></h1>
-</section>
-<section id="id1">
-<h1>levelz-py<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
 <blockquote>
 <div><p>Python bindings &amp; API for the LevelZ File Format</p>
 </div></blockquote>
@@ -57,7 +54,34 @@
 </section>
 <section id="download">
 <h2>Download<a class="headerlink" href="#download" title="Link to this heading">¶</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>levelz-py
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>levelz
+</pre></div>
+</div>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading">¶</a></h2>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">levelz</span> <span class="kn">import</span> <span class="n">Coordiante2D</span>
+
+<span class="n">coord</span> <span class="o">=</span> <span class="n">Coordiante2D</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">coord</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">levelz</span> <span class="kn">import</span> <span class="n">parse_lines</span><span class="p">,</span> <span class="n">Level2D</span>
+
+<span class="n">lines</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;@type 2&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;@spawn default&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;---&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;grass: [0, 0]*[0, 1]&quot;</span>
+<span class="p">]</span>
+
+<span class="n">level</span><span class="p">:</span> <span class="n">Level2D</span> <span class="o">=</span> <span class="n">parse_lines</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">levelz</span> <span class="kn">import</span> <span class="n">parse_file</span>
+
+<span class="n">level</span> <span class="o">=</span> <span class="n">parse_file</span><span class="p">(</span><span class="s2">&quot;level.lvlz&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">level</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
@@ -89,6 +113,30 @@
 <li class="toctree-l8"><a class="reference internal" href="autoapi/levelz/block/index.html#levelz.block.LevelObject._coordinate"><code class="docutils literal notranslate"><span class="pre">LevelObject._coordinate</span></code></a></li>
 <li class="toctree-l8"><a class="reference internal" href="autoapi/levelz/block/index.html#levelz.block.LevelObject.__str__"><code class="docutils literal notranslate"><span class="pre">LevelObject.__str__()</span></code></a></li>
 <li class="toctree-l8"><a class="reference internal" href="autoapi/levelz/block/index.html#levelz.block.LevelObject.__eq__"><code class="docutils literal notranslate"><span class="pre">LevelObject.__eq__()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="autoapi/levelz/builder/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">levelz.builder</span></code></a><ul>
+<li class="toctree-l5"><a class="reference internal" href="autoapi/levelz/builder/index.html#module-contents">Module Contents</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="autoapi/levelz/builder/index.html#classes">Classes</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="autoapi/levelz/builder/index.html#levelz.builder.LevelBuilder"><code class="docutils literal notranslate"><span class="pre">LevelBuilder</span></code></a><ul>
+<li class="toctree-l8"><a class="reference internal" href="autoapi/levelz/builder/index.html#levelz.builder.LevelBuilder.dimension"><code class="docutils literal notranslate"><span class="pre">LevelBuilder.dimension</span></code></a></li>
+<li class="toctree-l8"><a class="reference internal" href="autoapi/levelz/builder/index.html#levelz.builder.LevelBuilder.blocks"><code class="docutils literal notranslate"><span class="pre">LevelBuilder.blocks</span></code></a></li>
+<li class="toctree-l8"><a class="reference internal" href="autoapi/levelz/builder/index.html#levelz.builder.LevelBuilder.headers"><code class="docutils literal notranslate"><span class="pre">LevelBuilder.headers</span></code></a></li>
+<li class="toctree-l8"><a class="reference internal" href="autoapi/levelz/builder/index.html#levelz.builder.LevelBuilder._dimension"><code class="docutils literal notranslate"><span class="pre">LevelBuilder._dimension</span></code></a></li>
+<li class="toctree-l8"><a class="reference internal" href="autoapi/levelz/builder/index.html#levelz.builder.LevelBuilder._blocks"><code class="docutils literal notranslate"><span class="pre">LevelBuilder._blocks</span></code></a></li>
+<li class="toctree-l8"><a class="reference internal" href="autoapi/levelz/builder/index.html#levelz.builder.LevelBuilder._headers"><code class="docutils literal notranslate"><span class="pre">LevelBuilder._headers</span></code></a></li>
+<li class="toctree-l8"><a class="reference internal" href="autoapi/levelz/builder/index.html#levelz.builder.LevelBuilder.add_block"><code class="docutils literal notranslate"><span class="pre">LevelBuilder.add_block()</span></code></a></li>
+<li class="toctree-l8"><a class="reference internal" href="autoapi/levelz/builder/index.html#levelz.builder.LevelBuilder.add_object"><code class="docutils literal notranslate"><span class="pre">LevelBuilder.add_object()</span></code></a></li>
+<li class="toctree-l8"><a class="reference internal" href="autoapi/levelz/builder/index.html#levelz.builder.LevelBuilder.add_header"><code class="docutils literal notranslate"><span class="pre">LevelBuilder.add_header()</span></code></a></li>
+<li class="toctree-l8"><a class="reference internal" href="autoapi/levelz/builder/index.html#levelz.builder.LevelBuilder.build"><code class="docutils literal notranslate"><span class="pre">LevelBuilder.build()</span></code></a></li>
+<li class="toctree-l8"><a class="reference internal" href="autoapi/levelz/builder/index.html#levelz.builder.LevelBuilder.create_2d"><code class="docutils literal notranslate"><span class="pre">LevelBuilder.create_2d()</span></code></a></li>
+<li class="toctree-l8"><a class="reference internal" href="autoapi/levelz/builder/index.html#levelz.builder.LevelBuilder.create_3d"><code class="docutils literal notranslate"><span class="pre">LevelBuilder.create_3d()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -317,10 +365,10 @@
   <div>
     <h3><a href="#">Table of Contents</a></h3>
     <ul>
-<li><a class="reference internal" href="#">levelz-py</a></li>
-<li><a class="reference internal" href="#id1">levelz-py</a><ul>
+<li><a class="reference internal" href="#">levelz-py</a><ul>
 <li><a class="reference internal" href="#overview">Overview</a></li>
 <li><a class="reference internal" href="#download">Download</a></li>
+<li><a class="reference internal" href="#usage">Usage</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#api-reference">API Reference</a></li>

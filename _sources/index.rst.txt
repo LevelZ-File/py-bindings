@@ -1,6 +1,3 @@
-levelz-py
-=====================================
-
 .. mdinclude:: ../README.md
 
 API Reference

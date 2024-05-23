@@ -16,6 +16,7 @@ Submodules
    :maxdepth: 1
 
    block/index.rst
+   builder/index.rst
    coord/index.rst
    level/index.rst
    parser/index.rst

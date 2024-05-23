@@ -1,0 +1,96 @@
+:py:mod:`levelz.builder`
+========================
+
+.. py:module:: levelz.builder
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   levelz.builder.LevelBuilder
+
+
+
+
+.. py:class:: LevelBuilder(dimension: levelz.coord.Dimension)
+
+
+   Represents a builder for creating LevelZ Levels.
+
+   .. py:property:: dimension
+
+      Returns the Dimension of the LevelBuilder.
+
+
+   .. py:property:: blocks
+
+      Returns an immutable copy of the blocks in the LevelBuilder.
+
+
+   .. py:property:: headers
+
+      Returns an immutable copy of the headers in the LevelBuilder.
+
+
+   .. py:attribute:: _dimension
+      :type: levelz.coord.Dimension
+
+      
+
+   .. py:attribute:: _blocks
+      :type: list[levelz.block.LevelObject]
+      :value: []
+
+      
+
+   .. py:attribute:: _headers
+      :type: dict[str, object]
+
+      
+
+   .. py:method:: add_block(block: levelz.block.Block | str, coordinate: levelz.coord.Coordinate2D | levelz.coord.Coordinate3D | list[int | float])
+
+      Adds a Block to the LevelBuilder.
+
+      :param block: The Block to add.
+      :param coordinate: The Coordinate of the Block.
+
+
+   .. py:method:: add_object(obj: levelz.block.LevelObject)
+
+      Adds a LevelObject to the LevelBuilder.
+
+      :param LevelObject obj: The LevelObject to add.
+
+
+   .. py:method:: add_header(key: str, value: object)
+
+      Adds a header to the LevelBuilder.
+
+      :param str key: The key of the header.
+      :param object value: The value of the header.
+
+
+   .. py:method:: build()
+
+      Builds the Level from the LevelBuilder.
+
+
+   .. py:method:: create_2d()
+      :staticmethod:
+
+      Creates a 2D LevelBuilder.
+
+
+   .. py:method:: create_3d()
+      :staticmethod:
+
+      Creates a 3D LevelBuilder.
+
+
+
