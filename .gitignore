@@ -5,3 +5,5 @@ __pycache__
 *.inv
 .coverage
 coverage.lcov
+dist/
+.pytest_cache/
