@@ -11,7 +11,7 @@ Provides Python Parsing/Support for the LevelZ File Format.
 ## Download
 
 ```bash
-pip install levelz-py
+pip install levelz
 ```
 
 ## Usage

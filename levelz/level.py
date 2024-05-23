@@ -1,8 +1,8 @@
 from enum import Enum
 from abc import ABCMeta
 
-from levelz.block import LevelObject
-from levelz.coord import Dimension, Coordinate2D, Coordinate3D
+from .block import LevelObject
+from .coord import Dimension, Coordinate2D, Coordinate3D
 
 class Scroll(Enum):
     """Represents the scroll direction of a 2D Level."""

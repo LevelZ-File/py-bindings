@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "levelz-py"
+name = "levelz"
 version = "0.1.0"
 authors = [
     { name = "Calculus Games" }

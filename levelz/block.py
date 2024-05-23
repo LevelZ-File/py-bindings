@@ -1,4 +1,4 @@
-from levelz.coord import Coordinate, Coordinate2D, Coordinate3D
+from .coord import Coordinate, Coordinate2D, Coordinate3D
 
 class Block:
     """Represents a Block in a Level."""

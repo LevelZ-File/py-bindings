@@ -1,8 +1,8 @@
 import random
 import re
-from levelz.coord import Coordinate2D, Coordinate3D
-from levelz.block import Block, LevelObject
-from levelz.level import Level2D, Level3D
+from .coord import Coordinate2D, Coordinate3D
+from .block import Block, LevelObject
+from .level import Level2D, Level3D
 
 # Export
 
