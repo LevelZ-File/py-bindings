@@ -37,8 +37,8 @@
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../index.html">levelz-py  documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="../../index.html" >API Reference</a> &#187;</li>
-          <li class="nav-item nav-item-2"><a href="../index.html" accesskey="U">levelz</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">levelz.block</a></li> 
+          <li class="nav-item nav-item-2"><a href="../index.html" accesskey="U"><code class="xref py py-mod docutils literal notranslate"><span class="pre">levelz</span></code></a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">levelz.block</span></code></a></li> 
       </ul>
     </div>  
 
@@ -48,183 +48,37 @@
           <div class="body" role="main">
             
   <section id="module-levelz.block">
-<span id="levelz-block"></span><h1>levelz.block<a class="headerlink" href="#module-levelz.block" title="Link to this heading">¶</a></h1>
+<span id="levelz-block"></span><h1><a class="reference internal" href="#module-levelz.block" title="levelz.block"><code class="xref py py-mod docutils literal notranslate"><span class="pre">levelz.block</span></code></a><a class="headerlink" href="#module-levelz.block" title="Link to this heading">¶</a></h1>
+<section id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
 <section id="classes">
-<h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+<h3>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h3>
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#levelz.block.Coordinate" title="levelz.block.Coordinate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Coordinate</span></code></a></p></td>
-<td><p>Represents a Game Coordinate.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#levelz.block.Coordinate2D" title="levelz.block.Coordinate2D"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Coordinate2D</span></code></a></p></td>
-<td><p>Represents a 2-Dimensional Coordinate.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#levelz.block.Coordinate3D" title="levelz.block.Coordinate3D"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Coordinate3D</span></code></a></p></td>
-<td><p>Represents a 3-Dimensional Coordinate.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#levelz.block.Block" title="levelz.block.Block"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Block</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#levelz.block.Block" title="levelz.block.Block"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Block</span></code></a></p></td>
 <td><p>Represents a Block in a Level.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#levelz.block.LevelObject" title="levelz.block.LevelObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LevelObject</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#levelz.block.LevelObject" title="levelz.block.LevelObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LevelObject</span></code></a></p></td>
 <td><p>Utility Object for representing a Level Block and its Coordinate.</p></td>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="module-contents">
-<h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
-<dl class="py class">
-<dt class="sig sig-object py" id="levelz.block.Coordinate">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">levelz.block.</span></span><span class="sig-name descname"><span class="pre">Coordinate</span></span><a class="headerlink" href="#levelz.block.Coordinate" title="Link to this definition">¶</a></dt>
-<dd><p>Represents a Game Coordinate.</p>
-<dl class="py property">
-<dt class="sig sig-object py" id="levelz.block.Coordinate.magnitude">
-<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">magnitude</span></span><a class="headerlink" href="#levelz.block.Coordinate.magnitude" title="Link to this definition">¶</a></dt>
-<dd><p>Return the magnitude of the coordinate.</p>
-</dd></dl>
-
-<dl class="py property">
-<dt class="sig sig-object py" id="levelz.block.Coordinate.dimension">
-<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dimension</span></span><a class="headerlink" href="#levelz.block.Coordinate.dimension" title="Link to this definition">¶</a></dt>
-<dd><p>Return the dimension of the coordinate.</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="levelz.block.Coordinate2D">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">levelz.block.</span></span><span class="sig-name descname"><span class="pre">Coordinate2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#levelz.block.Coordinate2D" title="Link to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#levelz.block.Coordinate" title="levelz.block.Coordinate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Coordinate</span></code></a></p>
-<p>Represents a 2-Dimensional Coordinate.</p>
-<dl class="py attribute">
-<dt class="sig sig-object py" id="levelz.block.Coordinate2D.x">
-<span class="sig-name descname"><span class="pre">x</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#levelz.block.Coordinate2D.x" title="Link to this definition">¶</a></dt>
-<dd><p>The x-coordinate of the 2D Coordinate.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="levelz.block.Coordinate2D.y">
-<span class="sig-name descname"><span class="pre">y</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#levelz.block.Coordinate2D.y" title="Link to this definition">¶</a></dt>
-<dd><p>The y-coordinate of the 2D Coordinate.</p>
-</dd></dl>
-
-<dl class="py property">
-<dt class="sig sig-object py" id="levelz.block.Coordinate2D.magnitude">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">magnitude</span></span><a class="headerlink" href="#levelz.block.Coordinate2D.magnitude" title="Link to this definition">¶</a></dt>
-<dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">Return</span> <span class="pre">the</span> <span class="pre">magnitude</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">coordinate.</span></span></dt>
-<dd></dd></dl>
-
-<dl class="py property">
-<dt class="sig sig-object py" id="levelz.block.Coordinate2D.dimension">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dimension</span></span><a class="headerlink" href="#levelz.block.Coordinate2D.dimension" title="Link to this definition">¶</a></dt>
-<dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">Return</span> <span class="pre">the</span> <span class="pre">dimension</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">coordinate.</span></span></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="levelz.block.Coordinate2D.__str__">
-<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#levelz.block.Coordinate2D.__str__" title="Link to this definition">¶</a></dt>
-<dd><p>Return str(self).</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="levelz.block.Coordinate2D.__eq__">
-<span class="sig-name descname"><span class="pre">__eq__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#levelz.block.Coordinate2D.__eq__" title="Link to this definition">¶</a></dt>
-<dd><p>Return self==value.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="levelz.block.Coordinate2D.from_string">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#levelz.block.Coordinate2D.from_string" title="Link to this definition">¶</a></dt>
-<dd><p>Parses a string to create a 2D Coordinate.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>s</strong> (<em>str</em>) – The string to parse.</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The 2D Coordinate.</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference internal" href="#levelz.block.Coordinate2D" title="levelz.block.Coordinate2D">Coordinate2D</a></p>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="levelz.block.Coordinate3D">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">levelz.block.</span></span><span class="sig-name descname"><span class="pre">Coordinate3D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#levelz.block.Coordinate3D" title="Link to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#levelz.block.Coordinate" title="levelz.block.Coordinate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Coordinate</span></code></a></p>
-<p>Represents a 3-Dimensional Coordinate.</p>
-<dl class="py attribute">
-<dt class="sig sig-object py" id="levelz.block.Coordinate3D.x">
-<span class="sig-name descname"><span class="pre">x</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#levelz.block.Coordinate3D.x" title="Link to this definition">¶</a></dt>
-<dd><p>The x-coordinate of the 3D Coordinate.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="levelz.block.Coordinate3D.y">
-<span class="sig-name descname"><span class="pre">y</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#levelz.block.Coordinate3D.y" title="Link to this definition">¶</a></dt>
-<dd><p>The y-coordinate of the 3D Coordinate.</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="levelz.block.Coordinate3D.z">
-<span class="sig-name descname"><span class="pre">z</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#levelz.block.Coordinate3D.z" title="Link to this definition">¶</a></dt>
-<dd><p>The z-coordinate of the 3D Coordinate.</p>
-</dd></dl>
-
-<dl class="py property">
-<dt class="sig sig-object py" id="levelz.block.Coordinate3D.magnitude">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">magnitude</span></span><a class="headerlink" href="#levelz.block.Coordinate3D.magnitude" title="Link to this definition">¶</a></dt>
-<dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">Return</span> <span class="pre">the</span> <span class="pre">magnitude</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">coordinate.</span></span></dt>
-<dd></dd></dl>
-
-<dl class="py property">
-<dt class="sig sig-object py" id="levelz.block.Coordinate3D.dimension">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dimension</span></span><a class="headerlink" href="#levelz.block.Coordinate3D.dimension" title="Link to this definition">¶</a></dt>
-<dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">Return</span> <span class="pre">the</span> <span class="pre">dimension</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">coordinate.</span></span></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="levelz.block.Coordinate3D.__str__">
-<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#levelz.block.Coordinate3D.__str__" title="Link to this definition">¶</a></dt>
-<dd><p>Return str(self).</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="levelz.block.Coordinate3D.__eq__">
-<span class="sig-name descname"><span class="pre">__eq__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#levelz.block.Coordinate3D.__eq__" title="Link to this definition">¶</a></dt>
-<dd><p>Return self==value.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="levelz.block.Coordinate3D.from_string">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#levelz.block.Coordinate3D.from_string" title="Link to this definition">¶</a></dt>
-<dd><p>Parses a string to create a 3D Coordinate.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>s</strong> (<em>str</em>) – The string to parse.</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>The 3D Coordinate.</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>Coordiante3D</p>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
 <dl class="py class">
 <dt class="sig sig-object py" id="levelz.block.Block">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">levelz.block.</span></span><span class="sig-name descname"><span class="pre">Block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">properties</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">object</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#levelz.block.Block" title="Link to this definition">¶</a></dt>
 <dd><p>Represents a Block in a Level.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="levelz.block.Block.name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#levelz.block.Block.name" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the name of the Block.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="levelz.block.Block.properties">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">properties</span></span><a class="headerlink" href="#levelz.block.Block.properties" title="Link to this definition">¶</a></dt>
+<dd><p>Returns an immutable copy of the properties for the Block.</p>
+</dd></dl>
+
 <dl class="py attribute">
 <dt class="sig sig-object py" id="levelz.block.Block._name">
 <span class="sig-name descname"><span class="pre">_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="headerlink" href="#levelz.block.Block._name" title="Link to this definition">¶</a></dt>
@@ -233,20 +87,6 @@
 <dl class="py attribute">
 <dt class="sig sig-object py" id="levelz.block.Block._properties">
 <span class="sig-name descname"><span class="pre">_properties</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">object</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#levelz.block.Block._properties" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py property">
-<dt class="sig sig-object py" id="levelz.block.Block.name">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#levelz.block.Block.name" title="Link to this definition">¶</a></dt>
-<dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">Returns</span> <span class="pre">the</span> <span class="pre">name</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">Block.</span></span></dt>
-<dd></dd></dl>
-
-<dl class="py property">
-<dt class="sig sig-object py" id="levelz.block.Block.properties">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">properties</span></span><a class="headerlink" href="#levelz.block.Block.properties" title="Link to this definition">¶</a></dt>
-<dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">Returns</span> <span class="pre">an</span> <span class="pre">immutable</span> <span class="pre">copy</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">properties</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">Block.</span></span></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -267,6 +107,18 @@
 <dt class="sig sig-object py" id="levelz.block.LevelObject">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">levelz.block.</span></span><span class="sig-name descname"><span class="pre">LevelObject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">block</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#levelz.block.Block" title="levelz.block.Block"><span class="pre">Block</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coordinate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../coord/index.html#levelz.coord.Coordinate" title="levelz.coord.Coordinate"><span class="pre">levelz.coord.Coordinate</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#levelz.block.LevelObject" title="Link to this definition">¶</a></dt>
 <dd><p>Utility Object for representing a Level Block and its Coordinate.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="levelz.block.LevelObject.block">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">block</span></span><a class="headerlink" href="#levelz.block.LevelObject.block" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the Block of the LevelObject.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="levelz.block.LevelObject.coordinate">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">coordinate</span></span><a class="headerlink" href="#levelz.block.LevelObject.coordinate" title="Link to this definition">¶</a></dt>
+<dd><p>Returns the Coordinate of the LevelObject.</p>
+</dd></dl>
+
 <dl class="py attribute">
 <dt class="sig sig-object py" id="levelz.block.LevelObject._block">
 <span class="sig-name descname"><span class="pre">_block</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#levelz.block.Block" title="levelz.block.Block"><span class="pre">Block</span></a></em><a class="headerlink" href="#levelz.block.LevelObject._block" title="Link to this definition">¶</a></dt>
@@ -275,20 +127,6 @@
 <dl class="py attribute">
 <dt class="sig sig-object py" id="levelz.block.LevelObject._coordinate">
 <span class="sig-name descname"><span class="pre">_coordinate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../coord/index.html#levelz.coord.Coordinate" title="levelz.coord.Coordinate"><span class="pre">levelz.coord.Coordinate</span></a></em><a class="headerlink" href="#levelz.block.LevelObject._coordinate" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py property">
-<dt class="sig sig-object py" id="levelz.block.LevelObject.block">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">block</span></span><a class="headerlink" href="#levelz.block.LevelObject.block" title="Link to this definition">¶</a></dt>
-<dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">Returns</span> <span class="pre">the</span> <span class="pre">Block</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">LevelObject.</span></span></dt>
-<dd></dd></dl>
-
-<dl class="py property">
-<dt class="sig sig-object py" id="levelz.block.LevelObject.coordinate">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">coordinate</span></span><a class="headerlink" href="#levelz.block.LevelObject.coordinate" title="Link to this definition">¶</a></dt>
-<dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">Returns</span> <span class="pre">the</span> <span class="pre">Coordinate</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">LevelObject.</span></span></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -307,6 +145,7 @@
 
 </section>
 </section>
+</section>
 
 
             <div class="clearer"></div>
@@ -318,51 +157,27 @@
   <div>
     <h3><a href="../../../index.html">Table of Contents</a></h3>
     <ul>
-<li><a class="reference internal" href="#">levelz.block</a><ul>
-<li><a class="reference internal" href="#classes">Classes</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">levelz.block</span></code></a><ul>
 <li><a class="reference internal" href="#module-contents">Module Contents</a><ul>
-<li><a class="reference internal" href="#levelz.block.Coordinate"><code class="docutils literal notranslate"><span class="pre">Coordinate</span></code></a><ul>
-<li><a class="reference internal" href="#levelz.block.Coordinate.magnitude"><code class="docutils literal notranslate"><span class="pre">Coordinate.magnitude</span></code></a></li>
-<li><a class="reference internal" href="#levelz.block.Coordinate.dimension"><code class="docutils literal notranslate"><span class="pre">Coordinate.dimension</span></code></a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#levelz.block.Coordinate2D"><code class="docutils literal notranslate"><span class="pre">Coordinate2D</span></code></a><ul>
-<li><a class="reference internal" href="#levelz.block.Coordinate2D.x"><code class="docutils literal notranslate"><span class="pre">Coordinate2D.x</span></code></a></li>
-<li><a class="reference internal" href="#levelz.block.Coordinate2D.y"><code class="docutils literal notranslate"><span class="pre">Coordinate2D.y</span></code></a></li>
-<li><a class="reference internal" href="#levelz.block.Coordinate2D.magnitude"><code class="docutils literal notranslate"><span class="pre">Coordinate2D.magnitude</span></code></a></li>
-<li><a class="reference internal" href="#levelz.block.Coordinate2D.dimension"><code class="docutils literal notranslate"><span class="pre">Coordinate2D.dimension</span></code></a></li>
-<li><a class="reference internal" href="#levelz.block.Coordinate2D.__str__"><code class="docutils literal notranslate"><span class="pre">Coordinate2D.__str__()</span></code></a></li>
-<li><a class="reference internal" href="#levelz.block.Coordinate2D.__eq__"><code class="docutils literal notranslate"><span class="pre">Coordinate2D.__eq__()</span></code></a></li>
-<li><a class="reference internal" href="#levelz.block.Coordinate2D.from_string"><code class="docutils literal notranslate"><span class="pre">Coordinate2D.from_string()</span></code></a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#levelz.block.Coordinate3D"><code class="docutils literal notranslate"><span class="pre">Coordinate3D</span></code></a><ul>
-<li><a class="reference internal" href="#levelz.block.Coordinate3D.x"><code class="docutils literal notranslate"><span class="pre">Coordinate3D.x</span></code></a></li>
-<li><a class="reference internal" href="#levelz.block.Coordinate3D.y"><code class="docutils literal notranslate"><span class="pre">Coordinate3D.y</span></code></a></li>
-<li><a class="reference internal" href="#levelz.block.Coordinate3D.z"><code class="docutils literal notranslate"><span class="pre">Coordinate3D.z</span></code></a></li>
-<li><a class="reference internal" href="#levelz.block.Coordinate3D.magnitude"><code class="docutils literal notranslate"><span class="pre">Coordinate3D.magnitude</span></code></a></li>
-<li><a class="reference internal" href="#levelz.block.Coordinate3D.dimension"><code class="docutils literal notranslate"><span class="pre">Coordinate3D.dimension</span></code></a></li>
-<li><a class="reference internal" href="#levelz.block.Coordinate3D.__str__"><code class="docutils literal notranslate"><span class="pre">Coordinate3D.__str__()</span></code></a></li>
-<li><a class="reference internal" href="#levelz.block.Coordinate3D.__eq__"><code class="docutils literal notranslate"><span class="pre">Coordinate3D.__eq__()</span></code></a></li>
-<li><a class="reference internal" href="#levelz.block.Coordinate3D.from_string"><code class="docutils literal notranslate"><span class="pre">Coordinate3D.from_string()</span></code></a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#classes">Classes</a><ul>
 <li><a class="reference internal" href="#levelz.block.Block"><code class="docutils literal notranslate"><span class="pre">Block</span></code></a><ul>
-<li><a class="reference internal" href="#levelz.block.Block._name"><code class="docutils literal notranslate"><span class="pre">Block._name</span></code></a></li>
-<li><a class="reference internal" href="#levelz.block.Block._properties"><code class="docutils literal notranslate"><span class="pre">Block._properties</span></code></a></li>
 <li><a class="reference internal" href="#levelz.block.Block.name"><code class="docutils literal notranslate"><span class="pre">Block.name</span></code></a></li>
 <li><a class="reference internal" href="#levelz.block.Block.properties"><code class="docutils literal notranslate"><span class="pre">Block.properties</span></code></a></li>
+<li><a class="reference internal" href="#levelz.block.Block._name"><code class="docutils literal notranslate"><span class="pre">Block._name</span></code></a></li>
+<li><a class="reference internal" href="#levelz.block.Block._properties"><code class="docutils literal notranslate"><span class="pre">Block._properties</span></code></a></li>
 <li><a class="reference internal" href="#levelz.block.Block.__str__"><code class="docutils literal notranslate"><span class="pre">Block.__str__()</span></code></a></li>
 <li><a class="reference internal" href="#levelz.block.Block.__eq__"><code class="docutils literal notranslate"><span class="pre">Block.__eq__()</span></code></a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#levelz.block.LevelObject"><code class="docutils literal notranslate"><span class="pre">LevelObject</span></code></a><ul>
-<li><a class="reference internal" href="#levelz.block.LevelObject._block"><code class="docutils literal notranslate"><span class="pre">LevelObject._block</span></code></a></li>
-<li><a class="reference internal" href="#levelz.block.LevelObject._coordinate"><code class="docutils literal notranslate"><span class="pre">LevelObject._coordinate</span></code></a></li>
 <li><a class="reference internal" href="#levelz.block.LevelObject.block"><code class="docutils literal notranslate"><span class="pre">LevelObject.block</span></code></a></li>
 <li><a class="reference internal" href="#levelz.block.LevelObject.coordinate"><code class="docutils literal notranslate"><span class="pre">LevelObject.coordinate</span></code></a></li>
+<li><a class="reference internal" href="#levelz.block.LevelObject._block"><code class="docutils literal notranslate"><span class="pre">LevelObject._block</span></code></a></li>
+<li><a class="reference internal" href="#levelz.block.LevelObject._coordinate"><code class="docutils literal notranslate"><span class="pre">LevelObject._coordinate</span></code></a></li>
 <li><a class="reference internal" href="#levelz.block.LevelObject.__str__"><code class="docutils literal notranslate"><span class="pre">LevelObject.__str__()</span></code></a></li>
 <li><a class="reference internal" href="#levelz.block.LevelObject.__eq__"><code class="docutils literal notranslate"><span class="pre">LevelObject.__eq__()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -375,12 +190,12 @@
   <div>
     <h4>Previous topic</h4>
     <p class="topless"><a href="../index.html"
-                          title="previous chapter">levelz</a></p>
+                          title="previous chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">levelz</span></code></a></p>
   </div>
   <div>
     <h4>Next topic</h4>
     <p class="topless"><a href="../builder/index.html"
-                          title="next chapter">levelz.builder</a></p>
+                          title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">levelz.builder</span></code></a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
@@ -420,8 +235,8 @@
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../index.html">levelz-py  documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="../../index.html" >API Reference</a> &#187;</li>
-          <li class="nav-item nav-item-2"><a href="../index.html" >levelz</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">levelz.block</a></li> 
+          <li class="nav-item nav-item-2"><a href="../index.html" ><code class="xref py py-mod docutils literal notranslate"><span class="pre">levelz</span></code></a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><code class="xref py py-mod docutils literal notranslate"><span class="pre">levelz.block</span></code></a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
