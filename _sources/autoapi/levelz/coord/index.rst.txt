@@ -1,14 +1,11 @@
-:py:mod:`levelz.coord`
-======================
+levelz.coord
+============
 
 .. py:module:: levelz.coord
 
 
-Module Contents
----------------
-
 Classes
-~~~~~~~
+-------
 
 .. autoapisummary::
 
@@ -18,40 +15,47 @@ Classes
    levelz.coord.Coordinate3D
 
 
-
+Module Contents
+---------------
 
 .. py:class:: Dimension
 
-
    Bases: :py:obj:`enum.Enum`
 
+
    Represents a Game Dimension.
-
-   .. py:property:: is2D
-
-      Returns True if the Dimension is 2D.
-
-
-   .. py:property:: is3D
-
-      Returns True if the Dimension is 3D.
 
 
    .. py:attribute:: TWO
       :value: 2
 
+
       Represents a 2D Plane.
+
 
 
    .. py:attribute:: THREE
       :value: 3
 
+
       Represents a 3D Space.
+
+
+
+   .. py:property:: is2D
+      Returns True if the Dimension is 2D.
+
+
+
+   .. py:property:: is3D
+      Returns True if the Dimension is 3D.
+
 
 
    .. py:method:: __str__()
 
       Return str(self).
+
 
 
    .. py:method:: __eq__(other)
@@ -62,13 +66,14 @@ Classes
 
 .. py:class:: Coordinate
 
-
    Represents a Game Coordinate.
+
 
    .. py:property:: magnitude
       :abstractmethod:
 
       Return the magnitude of the coordinate.
+
 
 
    .. py:property:: dimension
@@ -80,33 +85,38 @@ Classes
 
 .. py:class:: Coordinate2D(x: float, y: float)
 
-
    Bases: :py:obj:`Coordinate`
+
 
    Represents a 2-Dimensional Coordinate.
 
-   .. py:property:: magnitude
-
-      Return the magnitude of the coordinate.
-
-
-   .. py:property:: dimension
-
-      Return the dimension of the coordinate.
-
 
    .. py:attribute:: x
-      :type: float
+      :type:  float
       :value: 0
+
 
       The x-coordinate of the 2D Coordinate.
 
 
+
    .. py:attribute:: y
-      :type: float
+      :type:  float
       :value: 0
 
+
       The y-coordinate of the 2D Coordinate.
+
+
+
+   .. py:property:: magnitude
+      Return the magnitude of the coordinate.
+
+
+
+   .. py:property:: dimension
+      Return the dimension of the coordinate.
+
 
 
    .. py:method:: __str__()
@@ -114,13 +124,16 @@ Classes
       Return str(self).
 
 
+
    .. py:method:: __eq__(other)
 
       Return self==value.
 
 
+
    .. py:method:: from_string(s: str)
       :staticmethod:
+
 
       Parses a string to create a 2D Coordinate.
 
@@ -132,40 +145,47 @@ Classes
 
 .. py:class:: Coordinate3D(x: float, y: float, z: float)
 
-
    Bases: :py:obj:`Coordinate`
+
 
    Represents a 3-Dimensional Coordinate.
 
-   .. py:property:: magnitude
-
-      Return the magnitude of the coordinate.
-
-
-   .. py:property:: dimension
-
-      Return the dimension of the coordinate.
-
 
    .. py:attribute:: x
-      :type: float
+      :type:  float
       :value: 0
+
 
       The x-coordinate of the 3D Coordinate.
 
 
+
    .. py:attribute:: y
-      :type: float
+      :type:  float
       :value: 0
+
 
       The y-coordinate of the 3D Coordinate.
 
 
+
    .. py:attribute:: z
-      :type: float
+      :type:  float
       :value: 0
 
+
       The z-coordinate of the 3D Coordinate.
+
+
+
+   .. py:property:: magnitude
+      Return the magnitude of the coordinate.
+
+
+
+   .. py:property:: dimension
+      Return the dimension of the coordinate.
+
 
 
    .. py:method:: __str__()
@@ -173,13 +193,16 @@ Classes
       Return str(self).
 
 
+
    .. py:method:: __eq__(other)
 
       Return self==value.
 
 
+
    .. py:method:: from_string(s: str)
       :staticmethod:
+
 
       Parses a string to create a 3D Coordinate.
 
