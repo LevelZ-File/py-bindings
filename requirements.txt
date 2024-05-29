@@ -89,7 +89,7 @@ nbconvert==7.16.4
 nbdime==4.0.1
 nbformat==5.10.4
 nest-asyncio==1.6.0
-networkx==3.2.1
+networkx==3.3
 nh3==0.2.17
 notebook_shim==0.2.4
 numpy==1.26.4
