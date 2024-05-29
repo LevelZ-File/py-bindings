@@ -158,7 +158,7 @@ soupsieve==2.5
 Sphinx==7.3.7
 sphinx-autoapi==3.1.1
 sphinx-favicon==1.0.1
-sphinx_mdinclude==0.6.0
+sphinx_mdinclude==0.6.1
 sphinxcontrib-applehelp==1.0.8
 sphinxcontrib-devhelp==1.0.6
 sphinxcontrib-htmlhelp==2.0.5
