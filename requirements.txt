@@ -166,7 +166,7 @@ sphinxcontrib-jsmath==1.0.1
 sphinxcontrib-qthelp==1.0.7
 sphinxcontrib-serializinghtml==1.1.10
 stack-data==0.6.3
-sympy==1.12
+sympy==1.12.1
 tenacity==8.3.0
 terminado==0.18.1
 threadpoolctl==3.4.0
