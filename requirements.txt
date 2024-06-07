@@ -175,7 +175,7 @@ tomli==2.0.1
 tomli_w==1.0.0
 tomlkit==0.12.5
 torch==2.2.2
-tornado==6.4
+tornado==6.4.1
 traitlets==5.14.2
 triton==2.2.0
 trove-classifiers==2024.5.22
