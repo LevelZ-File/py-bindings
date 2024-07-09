@@ -143,7 +143,7 @@ rfc3986==2.0.0
 rfc3986-validator==0.1.1
 rich==13.7.1
 rpds-py==0.18.1
-scikit-learn==1.5.0
+scikit-learn==1.5.1
 scipy==1.14.0
 seaborn==0.13.2
 SecretStorage==3.3.3
