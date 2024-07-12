@@ -90,7 +90,7 @@ nbdime==4.0.1
 nbformat==5.10.4
 nest-asyncio==1.6.0
 networkx==3.3
-nh3==0.2.17
+nh3==0.2.18
 notebook_shim==0.2.4
 numpy==2.0.0
 nvidia-cublas-cu12==12.1.3.1
