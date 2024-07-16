@@ -113,7 +113,7 @@ parso==0.8.4
 pathspec==0.12.1
 pexpect==4.9.0
 pickleshare==0.7.5
-pillow==10.3.0
+pillow==10.4.0
 pkginfo==1.11.1
 platformdirs==4.2.2
 plotly==5.22.0
