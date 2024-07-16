@@ -193,4 +193,4 @@ webencodings==0.5.1
 websocket-client==1.8.0
 yarg==0.1.9
 zipp==3.19.2
-zstandard==0.22.0
+zstandard==0.23.0
