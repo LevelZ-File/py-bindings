@@ -108,6 +108,12 @@ Module Contents
    Represents a 2D Level.
 
 
+   .. py:attribute:: _headers
+
+
+   .. py:attribute:: _blocks
+
+
    .. py:property:: scroll
       Returns the Scroll of the Level.
 
@@ -124,6 +130,12 @@ Module Contents
 
 
    Represents a 3D Level.
+
+
+   .. py:attribute:: _headers
+
+
+   .. py:attribute:: _blocks
 
 
    .. py:property:: spawn
