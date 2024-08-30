@@ -74,7 +74,7 @@ jupyterlab==4.2.5
 jupyterlab_git==0.50.1
 jupyterlab_pygments==0.3.0
 jupyterlab_server==2.27.3
-keyring==25.2.1
+keyring==25.3.0
 kiwisolver==1.4.5
 markdown-it-py==3.0.0
 MarkupSafe==2.1.5
