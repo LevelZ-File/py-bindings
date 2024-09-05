@@ -213,14 +213,8 @@ Package Contents
 
    .. py:method:: __str__()
 
-      Return str(self).
-
-
 
    .. py:method:: __eq__(other)
-
-      Return self==value.
-
 
 
 .. py:class:: Coordinate
@@ -280,14 +274,8 @@ Package Contents
 
    .. py:method:: __str__()
 
-      Return str(self).
-
-
 
    .. py:method:: __eq__(other)
-
-      Return self==value.
-
 
 
    .. py:method:: from_string(s: str)
@@ -349,14 +337,8 @@ Package Contents
 
    .. py:method:: __str__()
 
-      Return str(self).
-
-
 
    .. py:method:: __eq__(other)
-
-      Return self==value.
-
 
 
    .. py:method:: from_string(s: str)
@@ -398,14 +380,8 @@ Package Contents
 
    .. py:method:: __str__()
 
-      Return str(self).
-
-
 
    .. py:method:: __eq__(other)
-
-      Return self==value.
-
 
 
 .. py:class:: LevelObject(block: Block | str, coordinate: levelz.coord.Coordinate | list[int | float])
@@ -433,14 +409,8 @@ Package Contents
 
    .. py:method:: __str__()
 
-      Return str(self).
-
-
 
    .. py:method:: __eq__(other)
-
-      Return self==value.
-
 
 
 .. py:function:: parse_level(level: str)

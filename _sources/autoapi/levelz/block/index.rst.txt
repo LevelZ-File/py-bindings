@@ -43,14 +43,8 @@ Module Contents
 
    .. py:method:: __str__()
 
-      Return str(self).
-
-
 
    .. py:method:: __eq__(other)
-
-      Return self==value.
-
 
 
 .. py:class:: LevelObject(block: Block | str, coordinate: levelz.coord.Coordinate | list[int | float])
@@ -78,13 +72,7 @@ Module Contents
 
    .. py:method:: __str__()
 
-      Return str(self).
-
-
 
    .. py:method:: __eq__(other)
-
-      Return self==value.
-
 
 
