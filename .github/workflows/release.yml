@@ -19,6 +19,6 @@ jobs:
           cache: 'pip'
       - name: Upload to PyPi
         run: |
-          pip install build
+          pip install build twine
           python -m build
           python -m twine upload dist/*
