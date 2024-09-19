@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../_static/favicon.ico">
+    <link rel="icon" type="image/png" href="../../../_static/favicon.png" sizes="1080x1080">
+    <title>levelz.matrix &#8212; levelz-py  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/classic.css?v=def86cc0" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=fd3f3429" />
+    
+    <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="levelz.parser" href="../parser/index.html" />
+    <link rel="prev" title="levelz.level" href="../level/index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../parser/index.html" title="levelz.parser"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../level/index.html" title="levelz.level"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">levelz-py  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../index.html" accesskey="U">levelz</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">levelz.matrix</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="module-levelz.matrix">
+<span id="levelz-matrix"></span><h1>levelz.matrix<a class="headerlink" href="#module-levelz.matrix" title="Link to this heading">¶</a></h1>
+<section id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#levelz.matrix.CoordinateMatrix" title="levelz.matrix.CoordinateMatrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CoordinateMatrix</span></code></a></p></td>
+<td><p>Represents a corodinate matrix.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#levelz.matrix.CoordinateMatrix2D" title="levelz.matrix.CoordinateMatrix2D"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CoordinateMatrix2D</span></code></a></p></td>
+<td><p>Represents a 2-Dimensional Coordinate Matrix.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#levelz.matrix.CoordinateMatrix3D" title="levelz.matrix.CoordinateMatrix3D"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CoordinateMatrix3D</span></code></a></p></td>
+<td><p>Represents a 3-Dimensional Coordinate Matrix.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">levelz.matrix.</span></span><span class="sig-name descname"><span class="pre">CoordinateMatrix</span></span><a class="headerlink" href="#levelz.matrix.CoordinateMatrix" title="Link to this definition">¶</a></dt>
+<dd><p>Represents a corodinate matrix.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix.dimension">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dimension</span></span><a class="headerlink" href="#levelz.matrix.CoordinateMatrix.dimension" title="Link to this definition">¶</a></dt>
+<dd><p>Return the dimension of the matrix.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix.coordinates">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">coordinates</span></span><a class="headerlink" href="#levelz.matrix.CoordinateMatrix.coordinates" title="Link to this definition">¶</a></dt>
+<dd><p>Return the coordinates of the matrix.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix.start">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">start</span></span><a class="headerlink" href="#levelz.matrix.CoordinateMatrix.start" title="Link to this definition">¶</a></dt>
+<dd><p>Return the starting coordinate for the matrix.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix2D">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">levelz.matrix.</span></span><span class="sig-name descname"><span class="pre">CoordinateMatrix2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">minX</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxX</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minY</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxY</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../coord/index.html#levelz.coord.Coordinate2D" title="levelz.coord.Coordinate2D"><span class="pre">levelz.coord.Coordinate2D</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#levelz.matrix.CoordinateMatrix2D" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#levelz.matrix.CoordinateMatrix" title="levelz.matrix.CoordinateMatrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CoordinateMatrix</span></code></a></p>
+<p>Represents a 2-Dimensional Coordinate Matrix.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix2D.minX">
+<span class="sig-name descname"><span class="pre">minX</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#levelz.matrix.CoordinateMatrix2D.minX" title="Link to this definition">¶</a></dt>
+<dd><p>The minimum x-coordinate of the Matrix.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix2D.maxX">
+<span class="sig-name descname"><span class="pre">maxX</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#levelz.matrix.CoordinateMatrix2D.maxX" title="Link to this definition">¶</a></dt>
+<dd><p>The maximum x-coordinate of the Matrix.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix2D.minY">
+<span class="sig-name descname"><span class="pre">minY</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#levelz.matrix.CoordinateMatrix2D.minY" title="Link to this definition">¶</a></dt>
+<dd><p>The minimum y-coordinate of the Matrix.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix2D.maxY">
+<span class="sig-name descname"><span class="pre">maxY</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#levelz.matrix.CoordinateMatrix2D.maxY" title="Link to this definition">¶</a></dt>
+<dd><p>The maximum y-coordinate of the Matrix.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix2D._start">
+<span class="sig-name descname"><span class="pre">_start</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../coord/index.html#levelz.coord.Coordinate2D" title="levelz.coord.Coordinate2D"><span class="pre">levelz.coord.Coordinate2D</span></a></em><a class="headerlink" href="#levelz.matrix.CoordinateMatrix2D._start" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix2D.dimension">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dimension</span></span><a class="headerlink" href="#levelz.matrix.CoordinateMatrix2D.dimension" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">Return</span> <span class="pre">the</span> <span class="pre">dimension</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">matrix.</span></span></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix2D.coordinates">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">coordinates</span></span><a class="headerlink" href="#levelz.matrix.CoordinateMatrix2D.coordinates" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">Return</span> <span class="pre">the</span> <span class="pre">coordinates</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">matrix.</span></span></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix2D.start">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">start</span></span><a class="headerlink" href="#levelz.matrix.CoordinateMatrix2D.start" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">Return</span> <span class="pre">the</span> <span class="pre">starting</span> <span class="pre">coordinate</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">matrix.</span></span></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix2D.__iter__">
+<span class="sig-name descname"><span class="pre">__iter__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#levelz.matrix.CoordinateMatrix2D.__iter__" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix2D.__getitem__">
+<span class="sig-name descname"><span class="pre">__getitem__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#levelz.matrix.CoordinateMatrix2D.__getitem__" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix2D.__str__">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#levelz.matrix.CoordinateMatrix2D.__str__" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix2D.__eq__">
+<span class="sig-name descname"><span class="pre">__eq__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#levelz.matrix.CoordinateMatrix2D.__eq__" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix2D.from_string">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#levelz.matrix.CoordinateMatrix2D.from_string" title="Link to this definition">¶</a></dt>
+<dd><p>Converts a string to a 2D Coordinate Matrix.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>string</strong> (<em>str</em>) – The string to convert.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The 2D Coordinate Matrix.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#levelz.matrix.CoordinateMatrix2D" title="levelz.matrix.CoordinateMatrix2D">CoordinateMatrix2D</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix3D">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">levelz.matrix.</span></span><span class="sig-name descname"><span class="pre">CoordinateMatrix3D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">minX</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxX</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minY</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxY</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minZ</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxZ</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../coord/index.html#levelz.coord.Coordinate3D" title="levelz.coord.Coordinate3D"><span class="pre">levelz.coord.Coordinate3D</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#levelz.matrix.CoordinateMatrix3D" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#levelz.matrix.CoordinateMatrix" title="levelz.matrix.CoordinateMatrix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CoordinateMatrix</span></code></a></p>
+<p>Represents a 3-Dimensional Coordinate Matrix.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix3D.minX">
+<span class="sig-name descname"><span class="pre">minX</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#levelz.matrix.CoordinateMatrix3D.minX" title="Link to this definition">¶</a></dt>
+<dd><p>The minimum x-coordinate of the Matrix.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix3D.maxX">
+<span class="sig-name descname"><span class="pre">maxX</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#levelz.matrix.CoordinateMatrix3D.maxX" title="Link to this definition">¶</a></dt>
+<dd><p>The maximum x-coordinate of the Matrix.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix3D.minY">
+<span class="sig-name descname"><span class="pre">minY</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#levelz.matrix.CoordinateMatrix3D.minY" title="Link to this definition">¶</a></dt>
+<dd><p>The minimum y-coordinate of the Matrix.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix3D.maxY">
+<span class="sig-name descname"><span class="pre">maxY</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#levelz.matrix.CoordinateMatrix3D.maxY" title="Link to this definition">¶</a></dt>
+<dd><p>The maximum y-coordinate of the Matrix.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix3D.minZ">
+<span class="sig-name descname"><span class="pre">minZ</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#levelz.matrix.CoordinateMatrix3D.minZ" title="Link to this definition">¶</a></dt>
+<dd><p>The minimum z-coordinate of the Matrix.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix3D.maxZ">
+<span class="sig-name descname"><span class="pre">maxZ</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#levelz.matrix.CoordinateMatrix3D.maxZ" title="Link to this definition">¶</a></dt>
+<dd><p>The maximum z-coordinate of the Matrix.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix3D._start">
+<span class="sig-name descname"><span class="pre">_start</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../coord/index.html#levelz.coord.Coordinate3D" title="levelz.coord.Coordinate3D"><span class="pre">levelz.coord.Coordinate3D</span></a></em><a class="headerlink" href="#levelz.matrix.CoordinateMatrix3D._start" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix3D.dimension">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dimension</span></span><a class="headerlink" href="#levelz.matrix.CoordinateMatrix3D.dimension" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">Return</span> <span class="pre">the</span> <span class="pre">dimension</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">matrix.</span></span></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix3D.coordinates">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">coordinates</span></span><a class="headerlink" href="#levelz.matrix.CoordinateMatrix3D.coordinates" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">Return</span> <span class="pre">the</span> <span class="pre">coordinates</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">matrix.</span></span></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix3D.start">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">start</span></span><a class="headerlink" href="#levelz.matrix.CoordinateMatrix3D.start" title="Link to this definition">¶</a></dt>
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">Return</span> <span class="pre">the</span> <span class="pre">starting</span> <span class="pre">coordinate</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">matrix.</span></span></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix3D.__iter__">
+<span class="sig-name descname"><span class="pre">__iter__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#levelz.matrix.CoordinateMatrix3D.__iter__" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix3D.__getitem__">
+<span class="sig-name descname"><span class="pre">__getitem__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#levelz.matrix.CoordinateMatrix3D.__getitem__" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix3D.__str__">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#levelz.matrix.CoordinateMatrix3D.__str__" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix3D.__eq__">
+<span class="sig-name descname"><span class="pre">__eq__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#levelz.matrix.CoordinateMatrix3D.__eq__" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="levelz.matrix.CoordinateMatrix3D.from_string">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#levelz.matrix.CoordinateMatrix3D.from_string" title="Link to this definition">¶</a></dt>
+<dd><p>Converts a string to a 3D Coordinate Matrix.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>string</strong> (<em>str</em>) – The string to convert.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The 3D Coordinate Matrix.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#levelz.matrix.CoordinateMatrix3D" title="levelz.matrix.CoordinateMatrix3D">CoordinateMatrix3D</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../../../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">levelz.matrix</a><ul>
+<li><a class="reference internal" href="#classes">Classes</a></li>
+<li><a class="reference internal" href="#module-contents">Module Contents</a><ul>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix</span></code></a><ul>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix.dimension"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix.dimension</span></code></a></li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix.coordinates"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix.coordinates</span></code></a></li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix.start"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix.start</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix2D"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix2D</span></code></a><ul>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix2D.minX"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix2D.minX</span></code></a></li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix2D.maxX"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix2D.maxX</span></code></a></li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix2D.minY"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix2D.minY</span></code></a></li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix2D.maxY"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix2D.maxY</span></code></a></li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix2D._start"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix2D._start</span></code></a></li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix2D.dimension"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix2D.dimension</span></code></a></li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix2D.coordinates"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix2D.coordinates</span></code></a></li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix2D.start"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix2D.start</span></code></a></li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix2D.__iter__"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix2D.__iter__()</span></code></a></li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix2D.__getitem__"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix2D.__getitem__()</span></code></a></li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix2D.__str__"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix2D.__str__()</span></code></a></li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix2D.__eq__"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix2D.__eq__()</span></code></a></li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix2D.from_string"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix2D.from_string()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix3D"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix3D</span></code></a><ul>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix3D.minX"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix3D.minX</span></code></a></li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix3D.maxX"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix3D.maxX</span></code></a></li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix3D.minY"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix3D.minY</span></code></a></li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix3D.maxY"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix3D.maxY</span></code></a></li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix3D.minZ"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix3D.minZ</span></code></a></li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix3D.maxZ"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix3D.maxZ</span></code></a></li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix3D._start"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix3D._start</span></code></a></li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix3D.dimension"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix3D.dimension</span></code></a></li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix3D.coordinates"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix3D.coordinates</span></code></a></li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix3D.start"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix3D.start</span></code></a></li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix3D.__iter__"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix3D.__iter__()</span></code></a></li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix3D.__getitem__"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix3D.__getitem__()</span></code></a></li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix3D.__str__"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix3D.__str__()</span></code></a></li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix3D.__eq__"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix3D.__eq__()</span></code></a></li>
+<li><a class="reference internal" href="#levelz.matrix.CoordinateMatrix3D.from_string"><code class="docutils literal notranslate"><span class="pre">CoordinateMatrix3D.from_string()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="../level/index.html"
+                          title="previous chapter">levelz.level</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="../parser/index.html"
+                          title="next chapter">levelz.parser</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/autoapi/levelz/matrix/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../parser/index.html" title="levelz.parser"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../level/index.html" title="levelz.level"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">levelz-py  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../index.html" >levelz</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">levelz.matrix</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Calculus Games.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.0.2.
+    </div>
+  </body>
+</html>

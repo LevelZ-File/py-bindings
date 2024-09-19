@@ -19,6 +19,7 @@ Submodules
    /autoapi/levelz/builder/index
    /autoapi/levelz/coord/index
    /autoapi/levelz/level/index
+   /autoapi/levelz/matrix/index
    /autoapi/levelz/parser/index
 
 
@@ -37,6 +38,9 @@ Classes
    levelz.Coordinate3D
    levelz.Block
    levelz.LevelObject
+   levelz.CoordinateMatrix
+   levelz.CoordinateMatrix2D
+   levelz.CoordinateMatrix3D
 
 
 Functions
@@ -426,5 +430,223 @@ Package Contents
 .. py:function:: parse_lines(level: list[str])
 
    Parses a Level from a list of strings.
+
+
+.. py:class:: CoordinateMatrix
+
+   Represents a corodinate matrix.
+
+
+   .. py:property:: dimension
+      :abstractmethod:
+
+      Return the dimension of the matrix.
+
+
+
+   .. py:property:: coordinates
+      :abstractmethod:
+
+      Return the coordinates of the matrix.
+
+
+
+   .. py:property:: start
+      :abstractmethod:
+
+      Return the starting coordinate for the matrix.
+
+
+
+.. py:class:: CoordinateMatrix2D(minX: int, maxX: int, minY: int, maxY: int, start: levelz.coord.Coordinate2D)
+
+   Bases: :py:obj:`CoordinateMatrix`
+
+
+   Represents a 2-Dimensional Coordinate Matrix.
+
+
+   .. py:attribute:: minX
+      :type:  int
+      :value: 0
+
+
+      The minimum x-coordinate of the Matrix.
+
+
+
+   .. py:attribute:: maxX
+      :type:  int
+      :value: 0
+
+
+      The maximum x-coordinate of the Matrix.
+
+
+
+   .. py:attribute:: minY
+      :type:  int
+      :value: 0
+
+
+      The minimum y-coordinate of the Matrix.
+
+
+
+   .. py:attribute:: maxY
+      :type:  int
+      :value: 0
+
+
+      The maximum y-coordinate of the Matrix.
+
+
+
+   .. py:attribute:: _start
+      :type:  levelz.coord.Coordinate2D
+
+
+   .. py:property:: dimension
+      Return the dimension of the matrix.
+
+
+
+   .. py:property:: coordinates
+      Return the coordinates of the matrix.
+
+
+
+   .. py:property:: start
+      Return the starting coordinate for the matrix.
+
+
+
+   .. py:method:: __iter__()
+
+
+   .. py:method:: __getitem__(index)
+
+
+   .. py:method:: __str__()
+
+
+   .. py:method:: __eq__(other)
+
+
+   .. py:method:: from_string(string: str)
+      :staticmethod:
+
+
+      Converts a string to a 2D Coordinate Matrix.
+
+      :param str string: The string to convert.
+      :return: The 2D Coordinate Matrix.
+      :rtype: CoordinateMatrix2D
+
+
+
+.. py:class:: CoordinateMatrix3D(minX: int, maxX: int, minY: int, maxY: int, minZ: int, maxZ: int, start: levelz.coord.Coordinate3D)
+
+   Bases: :py:obj:`CoordinateMatrix`
+
+
+   Represents a 3-Dimensional Coordinate Matrix.
+
+
+   .. py:attribute:: minX
+      :type:  int
+      :value: 0
+
+
+      The minimum x-coordinate of the Matrix.
+
+
+
+   .. py:attribute:: maxX
+      :type:  int
+      :value: 0
+
+
+      The maximum x-coordinate of the Matrix.
+
+
+
+   .. py:attribute:: minY
+      :type:  int
+      :value: 0
+
+
+      The minimum y-coordinate of the Matrix.
+
+
+
+   .. py:attribute:: maxY
+      :type:  int
+      :value: 0
+
+
+      The maximum y-coordinate of the Matrix.
+
+
+
+   .. py:attribute:: minZ
+      :type:  int
+      :value: 0
+
+
+      The minimum z-coordinate of the Matrix.
+
+
+
+   .. py:attribute:: maxZ
+      :type:  int
+      :value: 0
+
+
+      The maximum z-coordinate of the Matrix.
+
+
+
+   .. py:attribute:: _start
+      :type:  levelz.coord.Coordinate3D
+
+
+   .. py:property:: dimension
+      Return the dimension of the matrix.
+
+
+
+   .. py:property:: coordinates
+      Return the coordinates of the matrix.
+
+
+
+   .. py:property:: start
+      Return the starting coordinate for the matrix.
+
+
+
+   .. py:method:: __iter__()
+
+
+   .. py:method:: __getitem__(index)
+
+
+   .. py:method:: __str__()
+
+
+   .. py:method:: __eq__(other)
+
+
+   .. py:method:: from_string(string: str)
+      :staticmethod:
+
+
+      Converts a string to a 3D Coordinate Matrix.
+
+      :param str string: The string to convert.
+      :return: The 3D Coordinate Matrix.
+      :rtype: CoordinateMatrix3D
+
 
 
