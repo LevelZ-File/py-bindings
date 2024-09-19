@@ -3,6 +3,7 @@ import re
 from .coord import Coordinate2D, Coordinate3D
 from .block import Block, LevelObject
 from .level import Level2D, Level3D
+from .matrix import CoordinateMatrix2D, CoordinateMatrix3D
 
 # Export
 
@@ -129,21 +130,8 @@ def __read2DPoints(input: str):
         if (len(s) == 0): continue
 
         if (s[0] == '(' and s[-1] == ']'):
-            split = re.split(r"\^", s)
-
-            coords = re.sub(r"[\[\]\s]", "", split[1]).split(",")
-            matrix = re.sub(r"[()\s]", "", split[0]).split(",")
-
-            if (len(coords) != 2): raise ValueError(f"Invalid 2D Coordinate: {s}")
-            if (len(matrix) != 4): raise ValueError(f"Invalid 2D Matrix: {s}")
-
-            cx = float(coords[0]); cy = float(coords[1])
-            x1 = int(matrix[0]); x2 = int(matrix[1])
-            y1 = int(matrix[2]); y2 = int(matrix[3])
-
-            for x in range(min(x1, x2), max(x1, x2) + 1):
-                for y in range(min(y1, y2), max(y1, y2) + 1):
-                    points.append(Coordinate2D(cx + x, cy + y))
+            for coord in CoordinateMatrix2D.from_string(s):
+                points.append(coord)
         else:
             points.append(Coordinate2D.from_string(s))
     
@@ -159,23 +147,8 @@ def __read3DPoints(input: str):
         if (len(s) == 0): continue
 
         if (s[0] == '(' and s[-1] == ']'):
-            split = re.split(r"\^", s)
-
-            coords = re.sub(r"[\[\]\s]", "", split[1]).split(",")
-            matrix = re.sub(r"[()\s]", "", split[0]).split(",")
-
-            if (len(coords) != 3): raise ValueError(f"Invalid 3D Coordinate: {s}")
-            if (len(matrix) != 6): raise ValueError(f"Invalid 3D Matrix: {s}")
-
-            cx = float(coords[0]); cy = float(coords[1]); cz = float(coords[2])
-            x1 = int(matrix[0]); x2 = int(matrix[1])
-            y1 = int(matrix[2]); y2 = int(matrix[3])
-            z1 = int(matrix[4]); z2 = int(matrix[5])
-
-            for x in range(min(x1, x2), max(x1, x2) + 1):
-                for y in range(min(y1, y2), max(y1, y2) + 1):
-                    for z in range(min(z1, z2), max(z1, z2) + 1):
-                        points.append(Coordinate3D(cx + x, cy + y, cz + z))
+            for coord in CoordinateMatrix3D.from_string(s):
+                points.append(coord)
         else:
             points.append(Coordinate3D.from_string(s))
     
