@@ -55,7 +55,7 @@ jobs:
     - name: Install Sphinx
       run: |
         pip install -U sphinx
-        pip install sphinx-autoapi
+        pip install sphinx-autoapi sphinx_favicon sphinx_mdinclude
     - name: Build Docs
       run: sphinx-build docs docs/build
     - name: Deploy Docs
