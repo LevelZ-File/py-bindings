@@ -19,8 +19,6 @@ jobs:
       with:
         python-version: '3.10' 
         cache: 'pip'
-    - name: Install Dependencies
-      run: pip install -r requirements.txt
     - name: Build Project
       run: python -m compileall levelz
     
@@ -37,10 +35,10 @@ jobs:
       with:
         python-version: '3.10'
         cache: 'pip'
-    - name: Install Dependencies
-      run: pip install -r requirements.txt
     - name: Run Tests
-      run: pytest --cov=levelz test/ --cov-report term-missing
+      run: |
+        pip install pytest pytest-cov
+        pytest --cov=levelz test/ --cov-report term-missing
   
   deploy:
     needs: test
@@ -54,8 +52,6 @@ jobs:
       with:
         python-version: '3.10'
         cache: 'pip'
-    - name: Install Dependencies
-      run: pip install -r requirements.txt
     - name: Install Sphinx
       run: |
         pip install -U sphinx
