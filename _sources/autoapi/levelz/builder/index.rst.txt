@@ -67,16 +67,19 @@ Module Contents
 
 
    .. py:property:: dimension
+
       Returns the Dimension of the LevelBuilder.
 
 
 
    .. py:property:: blocks
+
       Returns an immutable copy of the blocks in the LevelBuilder.
 
 
 
    .. py:property:: headers
+
       Returns an immutable copy of the headers in the LevelBuilder.
 
 

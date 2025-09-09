@@ -124,16 +124,19 @@ Package Contents
 
 
    .. py:property:: dimension
+
       Returns the Dimension of the Level.
 
 
 
    .. py:property:: blocks
+
       Returns an immutable copy of the blocks in the Level.
 
 
 
    .. py:property:: headers
+
       Returns an immutable copy of the headers in the Level.
 
 
@@ -150,14 +153,18 @@ Package Contents
 
 
    .. py:attribute:: _blocks
+      :value: []
+
 
 
    .. py:property:: scroll
+
       Returns the Scroll of the Level.
 
 
 
    .. py:property:: spawn
+
       Returns the spawn point of the Level.
 
 
@@ -174,9 +181,12 @@ Package Contents
 
 
    .. py:attribute:: _blocks
+      :value: []
+
 
 
    .. py:property:: spawn
+
       Returns the spawn point of the Level.
 
 
@@ -206,11 +216,13 @@ Package Contents
 
 
    .. py:property:: is2D
+
       Returns True if the Dimension is 2D.
 
 
 
    .. py:property:: is3D
+
       Returns True if the Dimension is 3D.
 
 
@@ -229,12 +241,14 @@ Package Contents
    .. py:property:: magnitude
       :abstractmethod:
 
+
       Return the magnitude of the coordinate.
 
 
 
    .. py:property:: dimension
       :abstractmethod:
+
 
       Return the dimension of the coordinate.
 
@@ -267,11 +281,13 @@ Package Contents
 
 
    .. py:property:: magnitude
+
       Return the magnitude of the coordinate.
 
 
 
    .. py:property:: dimension
+
       Return the dimension of the coordinate.
 
 
@@ -330,11 +346,13 @@ Package Contents
 
 
    .. py:property:: magnitude
+
       Return the magnitude of the coordinate.
 
 
 
    .. py:property:: dimension
+
       Return the dimension of the coordinate.
 
 
@@ -373,11 +391,13 @@ Package Contents
 
 
    .. py:property:: name
+
       Returns the name of the Block.
 
 
 
    .. py:property:: properties
+
       Returns an immutable copy of the properties for the Block.
 
 
@@ -402,11 +422,13 @@ Package Contents
 
 
    .. py:property:: block
+
       Returns the Block of the LevelObject.
 
 
 
    .. py:property:: coordinate
+
       Returns the Coordinate of the LevelObject.
 
 
@@ -440,6 +462,7 @@ Package Contents
    .. py:property:: dimension
       :abstractmethod:
 
+
       Return the dimension of the matrix.
 
 
@@ -447,12 +470,14 @@ Package Contents
    .. py:property:: coordinates
       :abstractmethod:
 
+
       Return the coordinates of the matrix.
 
 
 
    .. py:property:: start
       :abstractmethod:
+
 
       Return the starting coordinate for the matrix.
 
@@ -507,16 +532,19 @@ Package Contents
 
 
    .. py:property:: dimension
+
       Return the dimension of the matrix.
 
 
 
    .. py:property:: coordinates
+
       Return the coordinates of the matrix.
 
 
 
    .. py:property:: start
+
       Return the starting coordinate for the matrix.
 
 
@@ -612,16 +640,19 @@ Package Contents
 
 
    .. py:property:: dimension
+
       Return the dimension of the matrix.
 
 
 
    .. py:property:: coordinates
+
       Return the coordinates of the matrix.
 
 
 
    .. py:property:: start
+
       Return the starting coordinate for the matrix.
 
 

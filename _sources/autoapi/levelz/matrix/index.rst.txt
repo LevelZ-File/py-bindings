@@ -25,6 +25,7 @@ Module Contents
    .. py:property:: dimension
       :abstractmethod:
 
+
       Return the dimension of the matrix.
 
 
@@ -32,12 +33,14 @@ Module Contents
    .. py:property:: coordinates
       :abstractmethod:
 
+
       Return the coordinates of the matrix.
 
 
 
    .. py:property:: start
       :abstractmethod:
+
 
       Return the starting coordinate for the matrix.
 
@@ -92,16 +95,19 @@ Module Contents
 
 
    .. py:property:: dimension
+
       Return the dimension of the matrix.
 
 
 
    .. py:property:: coordinates
+
       Return the coordinates of the matrix.
 
 
 
    .. py:property:: start
+
       Return the starting coordinate for the matrix.
 
 
@@ -197,16 +203,19 @@ Module Contents
 
 
    .. py:property:: dimension
+
       Return the dimension of the matrix.
 
 
 
    .. py:property:: coordinates
+
       Return the coordinates of the matrix.
 
 
 
    .. py:property:: start
+
       Return the starting coordinate for the matrix.
 
 

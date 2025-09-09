@@ -43,11 +43,13 @@ Module Contents
 
 
    .. py:property:: is2D
+
       Returns True if the Dimension is 2D.
 
 
 
    .. py:property:: is3D
+
       Returns True if the Dimension is 3D.
 
 
@@ -66,12 +68,14 @@ Module Contents
    .. py:property:: magnitude
       :abstractmethod:
 
+
       Return the magnitude of the coordinate.
 
 
 
    .. py:property:: dimension
       :abstractmethod:
+
 
       Return the dimension of the coordinate.
 
@@ -104,11 +108,13 @@ Module Contents
 
 
    .. py:property:: magnitude
+
       Return the magnitude of the coordinate.
 
 
 
    .. py:property:: dimension
+
       Return the dimension of the coordinate.
 
 
@@ -167,11 +173,13 @@ Module Contents
 
 
    .. py:property:: magnitude
+
       Return the magnitude of the coordinate.
 
 
 
    .. py:property:: dimension
+
       Return the dimension of the coordinate.
 
 

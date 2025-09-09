@@ -32,11 +32,13 @@ Module Contents
 
 
    .. py:property:: name
+
       Returns the name of the Block.
 
 
 
    .. py:property:: properties
+
       Returns an immutable copy of the properties for the Block.
 
 
@@ -61,11 +63,13 @@ Module Contents
 
 
    .. py:property:: block
+
       Returns the Block of the LevelObject.
 
 
 
    .. py:property:: coordinate
+
       Returns the Coordinate of the LevelObject.
 
 
